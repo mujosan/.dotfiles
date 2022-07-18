@@ -1,0 +1,6 @@
+Host 192.168.20.50
+  HostName 192.168.20.50
+
+Host pizerow.local
+  HostName pizerow.local
+  User pi
