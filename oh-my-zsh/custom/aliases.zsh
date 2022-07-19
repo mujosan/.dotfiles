@@ -28,11 +28,13 @@ if [[ $OSTYPE == darwin* ]]; then
     alias show='defaults write com.apple.finder AppleShowAllFiles YES'
     alias hide='defaults write com.apple.finder AppleShowAllFiles NO'
 
+    alias lt='du -sh * | sort -h'
 fi
 
 # Linux specific aliases
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     alias distro='cat /etc/*-release'
+    alias lt='ls --human-readable --size -1 -S --classify'
 fi
 
 
