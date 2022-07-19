@@ -13,6 +13,7 @@ alias relclean="ssh mhorner@hroor.ssd.hursley.ibm.com 'rm -fr /home/mhorner/web/
 alias gorb='cd ~/Documents/Computing/Development/Ruby'
 alias gopy='cd ~/Documents/Computing/Development/Python'
 alias gort='cd ~/Documents/Computing/Development/Rust'
+alias godf='cd ~/.dotfiles'
 
 # Apps
 alias peek='tar tvzf'
