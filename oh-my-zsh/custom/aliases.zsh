@@ -6,8 +6,7 @@ alias zshalias='code ~/.oh-my-zsh/custom/aliases.zsh'
 # SSH logins
 alias mcpi='ssh ubuntu@mcpi.local'
 # SSH commands
-alias relclean="ssh mhorner@hroor.ssd.hursley.ibm.com 'rm -fr /home/mhorner/web/public/*'"
-
+alias piholeup="ssh pi@pihole.local 'pihole -up'"
 
 # Navigation
 alias gorb='cd ~/Documents/Computing/Development/Ruby'
