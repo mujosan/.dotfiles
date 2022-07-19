@@ -28,13 +28,19 @@ if [[ $OSTYPE == darwin* ]]; then
     alias show='defaults write com.apple.finder AppleShowAllFiles YES'
     alias hide='defaults write com.apple.finder AppleShowAllFiles NO'
 
+    # List files by size
     alias lt='du -sh * | sort -h'
+    # View only mounted drives
+    alias mnt='mount | grep -E ^/dev | column -t'
 fi
 
 # Linux specific aliases
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     alias distro='cat /etc/*-release'
+    # List files by size
     alias lt='ls --human-readable --size -1 -S --classify'
+    # View only mounted drives
+    alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 fi
 
 
