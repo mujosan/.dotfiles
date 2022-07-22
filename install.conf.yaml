@@ -18,7 +18,9 @@
     ~/bin:
         path: bin/
         create: true
-    ~/.Brewfile: Brewfile
+    ~/.Brewfile: 
+        if: '[ `uname` = Darwin ]'
+        path: Brewfile
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
