@@ -3,20 +3,24 @@ alias ohmyzsh='code ~/.oh-my-zsh'
 alias zshconfig='code ~/.zshrc'
 alias zshalias='code ~/.oh-my-zsh/custom/aliases.zsh'
 
-# SSH logins
-alias mcpi='ssh ubuntu@mcpi.local'
-# SSH commands
-alias piholeup="ssh pi@pihole.local 'pihole -up'"
-
 # Navigation
-alias gorb='cd ~/Documents/Computing/Development/Ruby'
-alias gopy='cd ~/Documents/Computing/Development/Python'
-alias gort='cd ~/Documents/Computing/Development/Rust'
 alias godf='cd ~/.dotfiles'
 
 # Apps
 alias peek='tar tvzf'
 alias rng='RNparse.rb -af | grep'
+
+# Host specific aliases
+if [[$HOSTNAME = frink ]]; then
+    # Navigation
+    alias gorb='cd ~/Documents/Computing/Development/Ruby'
+    alias gopy='cd ~/Documents/Computing/Development/Python'
+    alias gort='cd ~/Documents/Computing/Development/Rust'
+    # SSH logins
+    alias mcpi='ssh ubuntu@mcpi.local'
+    # SSH commands
+    alias piholeup="ssh pi@pihole.local 'pihole -up'"
+fi
 
 # MacOS specific aliases
 if [[ $OSTYPE == darwin* ]]; then
@@ -31,6 +35,10 @@ if [[ $OSTYPE == darwin* ]]; then
     alias lt='du -sh * | sort -h'
     # View only mounted drives
     alias mnt='mount | grep -E ^/dev | column -t'
+    # Mac only suffix aliases
+    # Open text files with BBedit
+    alias -s txt=bbedit
+
 fi
 
 # Linux specific aliases
@@ -42,9 +50,11 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 fi
 
-
+alias ll='ls -alF'
 alias la='ls -la'
 alias lr='ls -lart'
+alias l='ls -CF'
+alias cls="clear; printf '\033[3J'"
 
 alias sz='source $HOME/.zshrc'
 alias myip='curl http://ipecho.net/plain; echo'
