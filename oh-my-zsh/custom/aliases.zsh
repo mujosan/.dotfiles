@@ -11,7 +11,7 @@ alias peek='tar tvzf'
 alias rng='RNparse.rb -af | grep'
 
 # Host specific aliases
-if [[$HOSTNAME = frink ]]; then
+if [[ $HOST == frink ]]; then
     # Navigation
     alias gorb='cd ~/Documents/Computing/Development/Ruby'
     alias gopy='cd ~/Documents/Computing/Development/Python'
