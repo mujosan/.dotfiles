@@ -7,6 +7,7 @@
 - link:
     ~/.profile: profile
     ~/.bash_profile: bash_profile
+    ~/.bash_aliases: bash_aliases
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
@@ -22,4 +23,5 @@
 - shell:
     - [chsh -s $(which zsh), Making zsh the default shell]
     - [git submodule update --init --recursive, Installing submodules]
+    - [source $HOME/.zshrc]
 
