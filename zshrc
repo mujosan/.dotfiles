@@ -55,7 +55,6 @@ plugins=(git ssh-agent cp ruby tmux sudo)
 
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.rvm/gems/ruby-3.0.0/bin:$HOME/.rvm/gems/ruby-3.0.0@global/bin:$HOME/.rvm/rubies/ruby-3.0.0/bin"
-export PATH="$PATH:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin"
 export PATH="$PATH:/usr/local/MacGPG2/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
