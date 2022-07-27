@@ -14,14 +14,15 @@
         path: ssh/config
         create: true
     ~/.tmux.conf: tmux.conf
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+        path: zshrc
+        force: true
     ~/.oh-my-zsh/custom/aliases.zsh: oh-my-zsh/custom/aliases.zsh
     ~/.Brewfile: 
         if: '[ `uname` = Darwin ]'
         path: Brewfile
 
 - shell:
-    - [chsh -s $(which zsh), Making zsh the default shell]
     - [git submodule update --init --recursive, Installing submodules]
     - [source $HOME/.zshrc]
 
