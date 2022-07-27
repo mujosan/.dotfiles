@@ -48,6 +48,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     alias lt='ls --human-readable --size -1 -S --classify'
     # View only mounted drives
     alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
+    alias ffs='sudo !!'
 fi
 
 alias ll='ls -alF'
@@ -58,7 +59,6 @@ alias cls="clear; printf '\033[3J'"
 
 alias sz='source $HOME/.zshrc'
 alias myip='curl http://ipecho.net/plain; echo'
-alias ffs='sudo !!'
 alias xit='exit'
 
 # Suffix aliases
