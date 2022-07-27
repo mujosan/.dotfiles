@@ -5,10 +5,14 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
+    ~/.profile: 
+        path: profile
+        force: true
     ~/.bash_profile: bash_profile
     ~/.bash_aliases: bash_aliases
-    ~/.bashrc: bashrc
+    ~/.bashrc: 
+        path: bashrc
+        force: true
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
         path: ssh/config
