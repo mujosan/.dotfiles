@@ -8,7 +8,6 @@ alias godf='cd ~/.dotfiles'
 
 # Apps
 alias peek='tar tvzf'
-alias rng='RNparse.rb -af | grep'
 
 # Host specific aliases
 if [[ $HOST == frink ]]; then
