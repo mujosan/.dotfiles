@@ -61,6 +61,7 @@ alias l='ls -CF'
 alias cls="clear; printf '\033[3J'"
 
 alias sz='source $HOME/.zshrc'
+alias cux='chmod u+x'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ffs='sudo !!'
 alias xit='exit'
