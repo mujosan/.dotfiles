@@ -15,6 +15,7 @@ if [[ $HOST == frink ]]; then
     alias gorb='cd ~/Documents/Computing/Development/Ruby'
     alias gopy='cd ~/Documents/Computing/Development/Python'
     alias gort='cd ~/Documents/Computing/Development/Rust'
+    alias gosh='cd ~/Documents/Computing/Development/Shell'
     # SSH logins
     alias mcpi='ssh ubuntu@mcpi.local'
     # SSH commands
@@ -41,7 +42,7 @@ if [[ $OSTYPE == darwin* ]]; then
 fi
 
 # Linux-specific aliases
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+if [[ "$OSTYPE" == "linux-gnu*" ]]; then
     alias distro='cat /etc/*-release'
     # List files by size
     alias lt='ls --human-readable --size -1 -S --classify'
