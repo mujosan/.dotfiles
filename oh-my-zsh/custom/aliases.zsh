@@ -67,6 +67,7 @@ if [[ $OSTYPE == darwin* ]]; then
     alias lt='du -sh * | sort -h'
     # View only mounted drives
     alias mnt='mount | grep -E ^/dev | column -t'
+    
     # Mac only suffix aliases
     # Open text files with BBedit
     alias -s txt=bbedit
