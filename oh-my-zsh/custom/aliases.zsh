@@ -85,6 +85,7 @@ if [[ "$OSTYPE" == "linux-gnu*" ]]; then
     local DISTRO=$(awk -F= '/^NAME/{print $2}' /etc/os-release) # Derive distro
     if [[ ${DISTRO} =~ "Ubuntu" ]] || [[ ${DISTRO} =~ "Debian" ]]; then
         alias sai='sudo apt -y install'
+        alias sauu='sudo apt update && sudo apt upgrade -y'
     fi
 fi
 
