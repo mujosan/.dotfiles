@@ -83,7 +83,7 @@ if [[ "$OSTYPE" == "linux-gnu*" ]]; then
     alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 
     local DISTRO=$(awk -F= '/^NAME/{print $2}' /etc/os-release) # Derive distro
-    if [[ ${DISTRO} =~ "Ubuntu" ]] || [[ ${DISTRO} =~ "Debian" ]]; then
+    if [[ ${DISTRO} =~ "Ubuntu" ]] || [[ ${DISTRO} =~ "Debian" ]] || [[ ${DISTRO} =~ "PureOS" ]] ; then
         alias sai='sudo apt -y install'
         alias sauu='sudo apt update && sudo apt upgrade -y'
     fi
