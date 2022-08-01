@@ -75,7 +75,7 @@ if [[ $OSTYPE == darwin* ]]; then
 fi
 
 # Linux-specific aliases
-if [[ "$OSTYPE" == "linux-gnu*" ]]; then
+if [[ $OSTYPE == "linux-gnu" ]]; then
     alias distro='cat /etc/*-release'
     # List files by size
     alias lt='ls --human-readable --size -1 -S --classify'
