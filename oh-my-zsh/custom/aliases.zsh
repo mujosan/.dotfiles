@@ -24,6 +24,9 @@ alias godf='cd ~/.dotfiles'
 # Apps
 alias peek='tar tvzf'
 
+# Git command aliases not in the plugin
+alias gplo='git pull origin'
+
 # Suffix aliases
 # Markdown files
 alias -s md=code
