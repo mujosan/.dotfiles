@@ -20,6 +20,8 @@ alias zshalias='code ~/.oh-my-zsh/custom/aliases.zsh'
 
 # Global Navigation
 alias godf='cd ~/.dotfiles'
+alias goa='cd ~/Ansible'
+alias goas='cd ~/Ansible/Scripts'
 
 # Apps
 alias peek='tar tvzf'
