@@ -51,7 +51,7 @@ HIST_STAMPS="dd/mm/yyyy"
 if [[ $HOST == frink ]]; then
   zstyle :omz:plugin:ssh-agent identities id_rsa_github id_ed25519_220108_pi
 else
-  zstyle :omz:plugins:ssh-agent identities id_rsa_github id_ed25519_ansible
+  zstyle :omz:plugins:ssh-agent identities id_ed25519_ansible
 fi
 
 
