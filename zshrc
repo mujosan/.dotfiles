@@ -8,6 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 PROMPT='%n@%m:%d'
+export PROMPT
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
