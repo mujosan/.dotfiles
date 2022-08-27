@@ -48,8 +48,12 @@ HIST_STAMPS="dd/mm/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-# zstyle :omz:plugin:ssh-agent identities id_rsa id_rsa_github id_ed25519_pi id_ed25519_220108_pi
-zstyle :omz:plugins:ssh-agent identities id_rsa_github id_ed25519_ansible
+if [[ $HOST == frink ]]; then
+  zstyle :omz:plugin:ssh-agent identities id_rsa_github id_ed25519_220108_pi
+else
+  zstyle :omz:plugins:ssh-agent identities id_rsa_github id_ed25519_ansible
+fi
+
 
 plugins=(ssh-agent git cp ruby tmux sudo)
 
