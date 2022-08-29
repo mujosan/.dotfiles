@@ -1,12 +1,9 @@
-# Global aliases
+# Simple aliases
 alias ll='ls -alF'
 alias la='ls -la'
 alias lr='ls -lart'
 alias l='ls -CF'
 alias cls="clear; printf '\033[3J'"
-alias -g L='| less'
-alias -g G='| grep'
-
 alias sz='source $HOME/.zshrc'
 alias cux='chmod u+x'
 alias myip='curl http://ipecho.net/plain; echo'
@@ -15,32 +12,37 @@ alias xit='exit'
 alias sal='ssh-add -l'
 alias saD='ssh-add -D'
 
-# Edit ZSH config files
+## Edit ZSH config files
 alias ohmyzsh='code ~/.oh-my-zsh'
 alias zshconfig='code ~/.zshrc'
 alias zshalias='code ~/.oh-my-zsh/custom/aliases.zsh'
 
-# Global Navigation
+## Global Navigation
 alias godf='cd ~/.dotfiles'
 alias goa='cd ~/Ansible'
 alias goas='cd ~/Ansible/Scripts'
 
-# Apps
+## Apps
 alias peek='tar tvzf'
+alias apb='ansible-playbook'
 
-# Git command aliases not in the plugin
+## Git command aliases not in the plugin
 alias gplo='git pull origin'
 
+# Global aliases
+alias -g L='| less'
+alias -g G='| grep'
+
 # Suffix aliases
-# Markdown files
+## Markdown files
 alias -s md=code
-# JSON files
+## JSON files
 alias -s json=code
-# bulk association
+## bulk association
 alias -s {cs,ts,html}=code
 
 # Function aliases
-# Add, commit and push a change with commit message parameter
+## Add, commit and push a change with commit message parameter
 function acp() {
 git add .
 git commit -m "$1"
@@ -63,30 +65,29 @@ fi
 
 # MacOS-specific aliases
 if [[ $OSTYPE == darwin* ]]; then
-    # Lock screen
+    ## Lock screen
     alias sloc='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
-    # Show/hide dot files in Finder
+    ## Show/hide dot files in Finder
     alias show='defaults write com.apple.finder AppleShowAllFiles YES'
     alias hide='defaults write com.apple.finder AppleShowAllFiles NO'
 
-    # List files by size
+    ## List files by size
     alias lt='du -sh * | sort -h'
-    # View only mounted drives
+    ## View only mounted drives
     alias mnt='mount | grep -E ^/dev | column -t'
     
-    # Mac only suffix aliases
-    # Open text files with BBedit
+    ## Mac only suffix aliases
+    ## Open text files with BBedit
     alias -s txt=bbedit
-
 fi
 
 # Linux-specific aliases
 if [[ $OSTYPE == "linux-gnu" ]]; then
     alias distro='cat /etc/*-release'
-    # List files by size
+    ## List files by size
     alias lt='ls --human-readable --size -1 -S --classify'
-    # View only mounted drives
+    ## View only mounted drives
     alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 
     local DISTRO=$(awk -F= '/^NAME/{print $2}' /etc/os-release) # Derive distro
