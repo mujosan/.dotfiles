@@ -48,9 +48,11 @@ HIST_STAMPS="dd/mm/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-if [[ $HOST == frink ]]; then
-  zstyle :omz:plugin:ssh-agent identities id_rsa_github id_ed25519_220108_pi
+if [ $HOST = frink ]; then
+  echo "We are on fink!"
+  zstyle :omz:plugins:ssh-agent identities id_ed25519_ansible id_ed25519_270822_github id_ed25519_220108_pi
 else
+  echo "We are NOT on fink!"
   zstyle :omz:plugins:ssh-agent identities id_ed25519_ansible
 fi
 
