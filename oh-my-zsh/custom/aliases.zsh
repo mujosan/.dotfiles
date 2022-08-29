@@ -12,6 +12,8 @@ alias cux='chmod u+x'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ffs='sudo !!'
 alias xit='exit'
+alias sal='ssh-add -l'
+alias saD='ssh-add -D'
 
 # Edit ZSH config files
 alias ohmyzsh='code ~/.oh-my-zsh'
