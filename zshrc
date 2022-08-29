@@ -49,13 +49,10 @@ HIST_STAMPS="dd/mm/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 
 if [ $HOST = frink ]; then
-  echo "We are on fink!"
   zstyle :omz:plugins:ssh-agent identities id_ed25519_ansible id_ed25519_270822_github id_ed25519_220108_pi
 else
-  echo "We are NOT on fink!"
   zstyle :omz:plugins:ssh-agent identities id_ed25519_ansible
 fi
-
 
 plugins=(ssh-agent git cp ruby tmux sudo)
 
@@ -68,7 +65,6 @@ export PATH="$PATH:/usr/local/MacGPG2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
