@@ -22,6 +22,7 @@
         path: zshrc
         force: true
     ~/.oh-my-zsh/custom/aliases.zsh: oh-my-zsh/custom/aliases.zsh
+    ~/.oh-my-zsh/custom/themes/bira.zsh-theme: oh-my-zsh/custom/themes/bira.zsh-theme
     ~/.Brewfile: 
         if: '[ `uname` = Darwin ]'
         path: Brewfile

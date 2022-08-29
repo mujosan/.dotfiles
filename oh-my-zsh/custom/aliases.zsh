@@ -32,6 +32,7 @@ alias gplo='git pull origin'
 # Global aliases
 alias -g L='| less'
 alias -g G='| grep'
+alias -g DC='--diff --check'
 
 # Suffix aliases
 ## Markdown files
