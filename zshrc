@@ -58,6 +58,7 @@ plugins=(ssh-agent git cp ruby tmux sudo)
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.rvm/gems/ruby-3.0.0/bin:$HOME/.rvm/gems/ruby-3.0.0@global/bin:$HOME/.rvm/rubies/ruby-3.0.0/bin"
 export PATH="$PATH:/usr/local/MacGPG2/bin"
+export PATH="$PATH:/usr/local/Cellar/ansible-lint/6.5.2/libexec/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

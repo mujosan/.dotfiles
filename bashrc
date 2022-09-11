@@ -119,3 +119,5 @@ fi
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:/usr/local/MacGPG2/bin"
+export PATH="$PATH:/usr/local/Cellar/ansible-lint/6.5.2/libexec/bin"
