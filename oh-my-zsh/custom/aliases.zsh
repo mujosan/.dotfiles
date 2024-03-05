@@ -45,9 +45,9 @@ alias -s {cs,ts,html}=code
 # Function aliases
 ## Add, commit and push a change with commit message parameter
 function acp() {
-git add .
-git commit -m "$1"
-git push
+    git add .
+    git commit -m "$1"
+    git push
 }
 
 
@@ -97,6 +97,3 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
         alias sauu='sudo apt update && sudo apt upgrade -y'
     fi
 fi
-
-
-
