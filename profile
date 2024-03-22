@@ -28,3 +28,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 eval "$(rbenv init - zsh)"
+. "$HOME/.cargo/env"
