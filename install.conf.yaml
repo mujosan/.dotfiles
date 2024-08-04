@@ -13,6 +13,7 @@
     ~/.bashrc: 
         path: bashrc
         force: true
+    ~/.config/fish: fish
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
         path: ssh/config
@@ -29,5 +30,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [source $HOME/.zshrc]
+    - [source $HOME/.config/fish/config.fish]
 
