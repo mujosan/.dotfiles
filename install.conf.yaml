@@ -13,7 +13,9 @@
     ~/.bashrc: 
         path: bashrc
         force: true
-    ~/.config/fish: fish
+    ~/.config/fish:
+        path: fish
+        create: true
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
         path: ssh/config
