@@ -1,6 +1,5 @@
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "messense/macos-cross-toolchains"
 brew "ansible"
@@ -19,7 +18,6 @@ brew "gcc"
 brew "gh"
 brew "git"
 brew "gnupg"
-brew "hping"
 brew "imagemagick"
 brew "jq"
 brew "python@3.10"
@@ -72,7 +70,6 @@ mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
 mas "djay Pro", id: 947578651
 mas "DragonDrop", id: 499148234
-mas "DVD Burner", id: 903317493
 mas "Epson Label Editor Lite", id: 702826021
 mas "Fission", id: 549251391
 mas "GarageBand", id: 682658836
@@ -110,7 +107,6 @@ mas "Remote Desktop Scanner", id: 1605485521
 mas "Serial", id: 877615577
 mas "SerialTools", id: 611021963
 mas "Shazam", id: 897118787
-mas "SnippetsLab", id: 1006087419
 mas "Soulver 2", id: 413965349
 mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
@@ -121,7 +117,6 @@ mas "Trello", id: 1278508951
 mas "Twins", id: 502961959
 mas "Typist", id: 415166115
 mas "VisualDesigner", id: 1193683552
-mas "WhatsApp (old)", id: 1147396723
 mas "WiFi Explorer", id: 494803304
 mas "WiFi Signal", id: 525912054
 mas "Windows App", id: 1295203466
