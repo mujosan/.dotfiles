@@ -24,7 +24,6 @@ brew "python@3.10"
 brew "keychain"
 brew "libdvdcss"
 brew "libiconv"
-brew "libvirt", restart_service: :changed
 brew "mas"
 brew "mkcert"
 brew "mtr"
@@ -34,16 +33,13 @@ brew "nss"
 brew "openvpn"
 brew "podman"
 brew "pwgen"
-brew "qemu"
 brew "ruby-build"
 brew "rbenv"
 brew "ruby@3.0"
 brew "rustup"
 brew "starship"
-brew "terraform"
 brew "tiger-vnc"
 brew "tmux"
-brew "tuntox"
 brew "upx"
 brew "wget"
 brew "wireguard-tools"
@@ -51,8 +47,6 @@ brew "wireshark"
 brew "zellij"
 brew "zlib"
 cask "font-hack-nerd-font"
-cask "hashicorp-vagrant"
-cask "kitty"
 cask "macfuse"
 cask "podman-desktop"
 cask "vagrant"
@@ -87,11 +81,9 @@ mas "Markdown Editor", id: 1458220908
 mas "Markoff", id: 1084713122
 mas "Micro Snitch", id: 972028355
 mas "MindNode", id: 992076693
-mas "MoneyWell", id: 404246493
 mas "NetSpot", id: 514951692
 mas "Network Logger Pro", id: 764324406
 mas "Numbers", id: 409203825
-mas "OmniFocus", id: 1346203938
 mas "Owly", id: 882812218
 mas "Pages", id: 409201541
 mas "Pastebot", id: 1179623856
@@ -106,7 +98,6 @@ mas "Remote Desktop", id: 409907375
 mas "Remote Desktop Scanner", id: 1605485521
 mas "Serial", id: 877615577
 mas "SerialTools", id: 611021963
-mas "Shazam", id: 897118787
 mas "Soulver 2", id: 413965349
 mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
