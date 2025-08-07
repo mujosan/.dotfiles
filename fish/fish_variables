@@ -3,7 +3,7 @@
 SETUVAR --export SSH_AGENT_PID:1238
 SETUVAR --export SSH_AUTH_SOCK:/var/folders/zw/1371ywqj3x570c4mkb74zs_00000gp/T//ssh\x2dxIO0Gdf4NBXb/agent\x2e1236
 SETUVAR SSH_KEYS_TO_AUTOLOAD:/Users/martin/\x2essh/id_ed25519_ansible\x1e/Users/martin/\x2essh/id_ed25519_270822_github\x1e/Users/martin/\x2essh/id_ed25519_220108_pi\x1e/Users/martin/\x2essh/id_ed25519_homer
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fisher_danhper_2F_fish_2D_ssh_2D_agent_files:\x7e/\x2econfig/fish/functions/__ssh_agent_is_started\x2efish\x1e\x7e/\x2econfig/fish/functions/__ssh_agent_start\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fish\x2dssh\x2dagent\x2efish
 SETUVAR _fisher_plugins:danhper/fish\x2dssh\x2dagent
 SETUVAR _fisher_upgraded_to_4_4:\x1d

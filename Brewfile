@@ -11,6 +11,7 @@ brew "llvm"
 brew "pkgconf"
 brew "crystal"
 brew "curl"
+brew "fd"
 brew "ffmpeg"
 brew "fish"
 brew "fisher"
@@ -65,9 +66,7 @@ mas "1Password for Safari", id: 1569813296
 mas "Acana QR Code Generator", id: 867814185
 mas "Bitwarden", id: 1352778147
 mas "Clean Text", id: 414782261
-mas "CleanMyDrive 2", id: 523620159
 mas "Color Maker", id: 561995913
-mas "CSView", id: 1167193104
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
 mas "Disk Speed Test", id: 425264550
@@ -93,22 +92,17 @@ mas "Owly", id: 882812218
 mas "Pages", id: 409201541
 mas "Pastebot", id: 1179623856
 mas "Piezo", id: 440641508
-mas "Pixelmator", id: 407963104
-mas "Playgrounds", id: 1496833156
 mas "PortraiMatic", id: 416557923
 mas "Prime Video", id: 545519333
 mas "Remote Desktop", id: 409907375
-mas "Remote Desktop Scanner", id: 1605485521
 mas "Serial", id: 877615577
 mas "SerialTools", id: 611021963
 mas "Soulver 2", id: 413965349
 mas "Speedtest", id: 1153157709
-mas "Swift Playground", id: 1496833156
 mas "Tailscale", id: 1475387142
 mas "Textastic", id: 572491815
 mas "Transmit", id: 403388562
 mas "Trello", id: 1278508951
-mas "Typist", id: 415166115
 mas "VisualDesigner", id: 1193683552
 mas "WiFi Explorer", id: 494803304
 mas "WiFi Signal", id: 525912054
