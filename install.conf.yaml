@@ -19,6 +19,9 @@
     ~/.config/fish:
         path: fish
         create: true
+    ~/.config/gh:
+        path: gh
+        create: true
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
         path: ssh/config
