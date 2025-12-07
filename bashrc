@@ -118,5 +118,9 @@ if ! shopt -oq posix; then
 fi
 
 export PATH="$PATH:/usr/local/MacGPG2/bin"
-export PATH="$PATH:/usr/local/Cellar/ansible-lint/6.5.2/libexec/bin"
 . "$HOME/.cargo/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/martin/.lmstudio/bin"
+# End of LM Studio CLI section
+
