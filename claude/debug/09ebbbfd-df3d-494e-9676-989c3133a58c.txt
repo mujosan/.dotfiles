@@ -1,0 +1,177 @@
+2025-12-06T13:31:27.987Z [DEBUG] Watching for changes in setting files /Users/martin/.claude/settings.json, /Users/martin/.claude/settings.json...
+2025-12-06T13:31:28.144Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-06T13:31:28.144Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-06T13:31:28.144Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-06T13:31:28.144Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-06T13:31:28.144Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-06T13:31:28.152Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027888152
+2025-12-06T13:31:28.152Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:28.153Z [DEBUG] Temp file written successfully, size: 46763 bytes
+2025-12-06T13:31:28.153Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:28.153Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027888152 to /Users/martin/.claude.json
+2025-12-06T13:31:28.154Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:28.181Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-06T13:31:28.184Z [DEBUG] Total LSP servers loaded: 0
+2025-12-06T13:31:28.186Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-06T13:31:28.186Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-06T13:31:28.189Z [DEBUG] LSP server manager initialized successfully
+2025-12-06T13:31:28.189Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-06T13:31:28.213Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/martin/.claude/skills, project=/Users/martin/.claude/skills
+2025-12-06T13:31:28.214Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-06T13:31:28.321Z [DEBUG] installed_plugins.json doesn't exist yet at /Users/martin/.claude/plugins/installed_plugins.json, returning empty object
+2025-12-06T13:31:28.397Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-06T13:31:28.397Z [DEBUG] Looking for shell config file: /Users/martin/.zshrc
+2025-12-06T13:31:28.398Z [DEBUG] Snapshots directory: /Users/martin/.claude/shell-snapshots
+2025-12-06T13:31:28.400Z [DEBUG] Creating snapshot at: /Users/martin/.claude/shell-snapshots/snapshot-zsh-1765027888398-zj6pfv.sh
+2025-12-06T13:31:28.400Z [DEBUG] Shell binary exists: true
+2025-12-06T13:31:28.400Z [DEBUG] Execution timeout: 10000ms
+2025-12-06T13:31:28.402Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/09ebbbfd-df3d-494e-9676-989c3133a58c-agent-09ebbbfd-df3d-494e-9676-989c3133a58c.json.tmp.8800.1765027888402
+2025-12-06T13:31:28.402Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-06T13:31:28.402Z [DEBUG] Renaming /Users/martin/.claude/todos/09ebbbfd-df3d-494e-9676-989c3133a58c-agent-09ebbbfd-df3d-494e-9676-989c3133a58c.json.tmp.8800.1765027888402 to /Users/martin/.claude/todos/09ebbbfd-df3d-494e-9676-989c3133a58c-agent-09ebbbfd-df3d-494e-9676-989c3133a58c.json
+2025-12-06T13:31:28.402Z [DEBUG] File /Users/martin/.claude/todos/09ebbbfd-df3d-494e-9676-989c3133a58c-agent-09ebbbfd-df3d-494e-9676-989c3133a58c.json written atomically
+2025-12-06T13:31:28.443Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027888443
+2025-12-06T13:31:28.443Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:28.443Z [DEBUG] Temp file written successfully, size: 46345 bytes
+2025-12-06T13:31:28.443Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:28.443Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027888443 to /Users/martin/.claude.json
+2025-12-06T13:31:28.443Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:28.445Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-06T13:31:28.445Z [DEBUG] Total plugin skills loaded: 0
+2025-12-06T13:31:28.445Z [DEBUG] Total plugin commands loaded: 0
+2025-12-06T13:31:28.446Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-06T13:31:28.454Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-06T13:31:28.458Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-12-06T13:31:28.461Z [DEBUG] Total plugin agents loaded: 0
+2025-12-06T13:31:28.543Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027888543
+2025-12-06T13:31:28.543Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:28.543Z [DEBUG] Temp file written successfully, size: 46379 bytes
+2025-12-06T13:31:28.543Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:28.543Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027888543 to /Users/martin/.claude.json
+2025-12-06T13:31:28.543Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:28.544Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027888544
+2025-12-06T13:31:28.544Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:28.544Z [DEBUG] Temp file written successfully, size: 46379 bytes
+2025-12-06T13:31:28.544Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:28.544Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027888544 to /Users/martin/.claude.json
+2025-12-06T13:31:28.545Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:28.547Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027888547
+2025-12-06T13:31:28.547Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:28.547Z [DEBUG] Temp file written successfully, size: 46414 bytes
+2025-12-06T13:31:28.547Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:28.547Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027888547 to /Users/martin/.claude.json
+2025-12-06T13:31:28.547Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:28.548Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027888548
+2025-12-06T13:31:28.548Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:28.548Z [DEBUG] Temp file written successfully, size: 46414 bytes
+2025-12-06T13:31:28.549Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:28.549Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027888548 to /Users/martin/.claude.json
+2025-12-06T13:31:28.549Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:28.564Z [ERROR] AxiosError: Error
+    at VS (/$bunfs/root/claude:174:1143)
+    at <anonymous> (/$bunfs/root/claude:175:10080)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:862:50)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:177:2147)
+    at processTicksAndRejections (native:7:39)
+2025-12-06T13:31:28.675Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027888675
+2025-12-06T13:31:28.675Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:28.676Z [DEBUG] Temp file written successfully, size: 49637 bytes
+2025-12-06T13:31:28.676Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:28.676Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027888675 to /Users/martin/.claude.json
+2025-12-06T13:31:28.676Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:28.903Z [DEBUG] Git remote URL: null
+2025-12-06T13:31:28.903Z [DEBUG] No git remote URL found
+2025-12-06T13:31:28.903Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-12-06T13:31:29.431Z [DEBUG] Shell snapshot created successfully (51053 bytes)
+2025-12-06T13:31:41.196Z [DEBUG] Failed to check metrics opt-out status: Request failed with status code 401
+2025-12-06T13:31:41.197Z [ERROR] AxiosError: Error
+    at VS (/$bunfs/root/claude:174:1143)
+    at <anonymous> (/$bunfs/root/claude:175:10080)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:862:50)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:177:2147)
+    at processTicksAndRejections (native:7:39)
+2025-12-06T13:31:41.198Z [DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+2025-12-06T13:31:41.270Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901270
+2025-12-06T13:31:41.270Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.270Z [DEBUG] Temp file written successfully, size: 49637 bytes
+2025-12-06T13:31:41.270Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.270Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901270 to /Users/martin/.claude.json
+2025-12-06T13:31:41.271Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.275Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901275
+2025-12-06T13:31:41.275Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.275Z [DEBUG] Temp file written successfully, size: 49682 bytes
+2025-12-06T13:31:41.275Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.275Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901275 to /Users/martin/.claude.json
+2025-12-06T13:31:41.275Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.277Z [DEBUG] Skipping SessionStart:startup hook execution - workspace trust not accepted
+2025-12-06T13:31:41.294Z [DEBUG] Skills and commands included in Skill tool:
+2025-12-06T13:31:41.294Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-12-06T13:31:41.480Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901480
+2025-12-06T13:31:41.480Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.480Z [DEBUG] Temp file written successfully, size: 49577 bytes
+2025-12-06T13:31:41.480Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.480Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901480 to /Users/martin/.claude.json
+2025-12-06T13:31:41.480Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.482Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901482
+2025-12-06T13:31:41.482Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.482Z [DEBUG] Temp file written successfully, size: 49577 bytes
+2025-12-06T13:31:41.482Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.483Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901482 to /Users/martin/.claude.json
+2025-12-06T13:31:41.483Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.490Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901490
+2025-12-06T13:31:41.490Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.490Z [DEBUG] Temp file written successfully, size: 49577 bytes
+2025-12-06T13:31:41.490Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.491Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901490 to /Users/martin/.claude.json
+2025-12-06T13:31:41.491Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.495Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901495
+2025-12-06T13:31:41.496Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.496Z [DEBUG] Temp file written successfully, size: 49764 bytes
+2025-12-06T13:31:41.496Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.496Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901495 to /Users/martin/.claude.json
+2025-12-06T13:31:41.496Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.499Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.60/claude
+2025-12-06T13:31:41.507Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.60/claude
+2025-12-06T13:31:41.507Z [DEBUG] performStartupChecks called
+2025-12-06T13:31:41.507Z [DEBUG] Trust not accepted for current directory - skipping plugin installations
+2025-12-06T13:31:41.600Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-12-06T13:31:41.603Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901603
+2025-12-06T13:31:41.603Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.603Z [DEBUG] Temp file written successfully, size: 49764 bytes
+2025-12-06T13:31:41.603Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.603Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901603 to /Users/martin/.claude.json
+2025-12-06T13:31:41.603Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.605Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-12-06T13:31:41.611Z [DEBUG] Skipping SubagentStart:Explore hook execution - workspace trust not accepted
+2025-12-06T13:31:41.674Z [DEBUG] Skipping SubagentStart:Plan hook execution - workspace trust not accepted
+2025-12-06T13:31:41.819Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901819
+2025-12-06T13:31:41.819Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.819Z [DEBUG] Temp file written successfully, size: 49764 bytes
+2025-12-06T13:31:41.819Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.819Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901819 to /Users/martin/.claude.json
+2025-12-06T13:31:41.819Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.821Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027901821
+2025-12-06T13:31:41.821Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:41.821Z [DEBUG] Temp file written successfully, size: 49764 bytes
+2025-12-06T13:31:41.821Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:41.821Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027901821 to /Users/martin/.claude.json
+2025-12-06T13:31:41.821Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:41.836Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.60/claude
+2025-12-06T13:31:43.179Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027903179
+2025-12-06T13:31:43.179Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:43.179Z [DEBUG] Temp file written successfully, size: 49764 bytes
+2025-12-06T13:31:43.179Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:43.179Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027903179 to /Users/martin/.claude.json
+2025-12-06T13:31:43.179Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:43.185Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.8800.1765027903185
+2025-12-06T13:31:43.185Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T13:31:43.185Z [DEBUG] Temp file written successfully, size: 49799 bytes
+2025-12-06T13:31:43.185Z [DEBUG] Applied original permissions to temp file
+2025-12-06T13:31:43.185Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.8800.1765027903185 to /Users/martin/.claude.json
+2025-12-06T13:31:43.185Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T13:31:44.678Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.60/claude
+2025-12-06T13:31:44.681Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-12-06T13:31:44.682Z [DEBUG] Skipping SessionEnd:prompt_input_exit hook execution - workspace trust not accepted

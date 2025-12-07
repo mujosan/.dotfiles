@@ -1,0 +1,148 @@
+2025-12-06T14:20:08.418Z [DEBUG] Watching for changes in setting files /Users/martin/.claude/settings.json...
+2025-12-06T14:20:08.572Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-06T14:20:08.573Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-06T14:20:08.573Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-06T14:20:08.573Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-06T14:20:08.573Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-06T14:20:08.595Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-06T14:20:08.597Z [DEBUG] Total LSP servers loaded: 0
+2025-12-06T14:20:08.599Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-06T14:20:08.599Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-06T14:20:08.601Z [DEBUG] LSP server manager initialized successfully
+2025-12-06T14:20:08.601Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-06T14:20:08.632Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/martin/.claude/skills, project=/Volumes/Data/Computing/Development/Rust/mp4renamer/.claude/skills
+2025-12-06T14:20:08.633Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-06T14:20:08.727Z [DEBUG] installed_plugins.json doesn't exist yet at /Users/martin/.claude/plugins/installed_plugins.json, returning empty object
+2025-12-06T14:20:08.840Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-06T14:20:08.840Z [DEBUG] Looking for shell config file: /Users/martin/.zshrc
+2025-12-06T14:20:08.840Z [DEBUG] Snapshots directory: /Users/martin/.claude/shell-snapshots
+2025-12-06T14:20:08.844Z [DEBUG] Creating snapshot at: /Users/martin/.claude/shell-snapshots/snapshot-zsh-1765030808840-ukbuxx.sh
+2025-12-06T14:20:08.844Z [DEBUG] Shell binary exists: true
+2025-12-06T14:20:08.844Z [DEBUG] Execution timeout: 10000ms
+2025-12-06T14:20:08.845Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac-agent-ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac.json.tmp.11778.1765030808845
+2025-12-06T14:20:08.845Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-06T14:20:08.845Z [DEBUG] Renaming /Users/martin/.claude/todos/ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac-agent-ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac.json.tmp.11778.1765030808845 to /Users/martin/.claude/todos/ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac-agent-ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac.json
+2025-12-06T14:20:08.846Z [DEBUG] File /Users/martin/.claude/todos/ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac-agent-ea0cfcec-1a2e-429d-aa11-5e65fd77e3ac.json written atomically
+2025-12-06T14:20:08.870Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030808870
+2025-12-06T14:20:08.870Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:08.871Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:08.871Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:08.871Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030808870 to /Users/martin/.claude.json
+2025-12-06T14:20:08.871Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:08.873Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-06T14:20:08.873Z [DEBUG] Total plugin skills loaded: 0
+2025-12-06T14:20:08.873Z [DEBUG] Total plugin commands loaded: 0
+2025-12-06T14:20:08.874Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-06T14:20:08.882Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-06T14:20:08.887Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-12-06T14:20:08.917Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030808917
+2025-12-06T14:20:08.917Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:08.918Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:08.918Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:08.918Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030808917 to /Users/martin/.claude.json
+2025-12-06T14:20:08.918Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:08.924Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030808924
+2025-12-06T14:20:08.924Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:08.924Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:08.924Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:08.924Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030808924 to /Users/martin/.claude.json
+2025-12-06T14:20:08.924Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:08.926Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030808926
+2025-12-06T14:20:08.926Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:08.927Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:08.927Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:08.927Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030808926 to /Users/martin/.claude.json
+2025-12-06T14:20:08.927Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:08.928Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030808928
+2025-12-06T14:20:08.928Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:08.928Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:08.928Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:08.928Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030808928 to /Users/martin/.claude.json
+2025-12-06T14:20:08.928Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:08.976Z [DEBUG] Total plugin agents loaded: 0
+2025-12-06T14:20:09.064Z [DEBUG] Git remote URL: null
+2025-12-06T14:20:09.064Z [DEBUG] No git remote URL found
+2025-12-06T14:20:09.064Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-12-06T14:20:09.445Z [DEBUG] Shell snapshot created successfully (51082 bytes)
+2025-12-06T14:20:09.511Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-12-06T14:20:09.735Z [DEBUG] MCP server "Ref": Initializing HTTP transport to https://api.ref.tools/mcp
+2025-12-06T14:20:09.736Z [DEBUG] MCP server "Ref": Node version: v24.3.0, Platform: darwin
+2025-12-06T14:20:09.736Z [DEBUG] MCP server "Ref": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-06T14:20:09.750Z [DEBUG] MCP server "Ref": Proxy options: default
+2025-12-06T14:20:09.752Z [DEBUG] MCP server "Ref": HTTP transport options: {"url":"https://api.ref.tools/mcp","headers":{"User-Agent":"claude-code/2.0.60","x-ref-api-key":"ref-58df6a6523d2031f9159"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-06T14:20:09.753Z [DEBUG] MCP server "Ref": HTTP transport created successfully
+2025-12-06T14:20:09.774Z [DEBUG] MCP server "Ref": Client created, setting up request handler
+2025-12-06T14:20:09.775Z [DEBUG] MCP server "Ref": Starting connection with timeout of 30000ms
+2025-12-06T14:20:09.775Z [DEBUG] MCP server "Ref": Testing basic HTTP connectivity to https://api.ref.tools/mcp
+2025-12-06T14:20:09.775Z [DEBUG] MCP server "Ref": Parsed URL: host=api.ref.tools, port=default, protocol=https:
+2025-12-06T14:20:09.780Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030809780
+2025-12-06T14:20:09.780Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:09.780Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:09.780Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:09.780Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030809780 to /Users/martin/.claude.json
+2025-12-06T14:20:09.780Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:09.787Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030809787
+2025-12-06T14:20:09.787Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:09.787Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:09.787Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:09.787Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030809787 to /Users/martin/.claude.json
+2025-12-06T14:20:09.787Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:09.789Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-06T14:20:09.789Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:20:09.789Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-06T14:20:09.846Z [DEBUG] MCP server "Ref": No token data found
+2025-12-06T14:20:10.076Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030810076
+2025-12-06T14:20:10.076Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:10.076Z [DEBUG] Temp file written successfully, size: 49786 bytes
+2025-12-06T14:20:10.076Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:10.076Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030810076 to /Users/martin/.claude.json
+2025-12-06T14:20:10.076Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:10.082Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.60/claude
+2025-12-06T14:20:10.092Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.60/claude
+2025-12-06T14:20:10.092Z [DEBUG] performStartupChecks called
+2025-12-06T14:20:10.092Z [DEBUG] Starting background plugin installations
+2025-12-06T14:20:10.092Z [DEBUG] performBackgroundPluginInstallations called
+2025-12-06T14:20:10.156Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-12-06T14:20:10.160Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.11778.1765030810160
+2025-12-06T14:20:10.160Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:20:10.160Z [DEBUG] Temp file written successfully, size: 49891 bytes
+2025-12-06T14:20:10.160Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:20:10.160Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.11778.1765030810160 to /Users/martin/.claude.json
+2025-12-06T14:20:10.160Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:20:10.163Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-12-06T14:20:10.163Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-12-06T14:20:10.172Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-06T14:20:10.172Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:20:10.172Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-06T14:20:10.198Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-06T14:20:10.198Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:20:10.198Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-06T14:20:10.243Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.60/claude
+2025-12-06T14:20:10.287Z [DEBUG] Stream started - received first chunk
+2025-12-06T14:20:10.412Z [DEBUG] MCP server "Ref": No token data found
+2025-12-06T14:20:10.547Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/local/Caskroom/claude-code/2.0.60/claude)
+2025-12-06T14:20:10.729Z [DEBUG] MCP server "Ref": No token data found
+2025-12-06T14:20:10.730Z [DEBUG] MCP server "Ref": Successfully connected to http server in 995ms
+2025-12-06T14:20:10.731Z [DEBUG] MCP server "Ref": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"Ref","title":"Ref","version":"3.0.0","websiteUrl":"https://ref.tools","icons":[{"src":"https://ref.tools/images/logo.png"}],"capabilities":{"prompts":{"listChanged":true},"tools":{}}}}
+2025-12-06T14:20:10.782Z [DEBUG] MCP server "Ref": No token data found
+2025-12-06T14:20:10.830Z [DEBUG] MCP server "Ref": No token data found
+2025-12-06T14:20:10.935Z [DEBUG] Stream started - received first chunk
+2025-12-06T14:20:11.205Z [DEBUG] Stream started - received first chunk
+2025-12-06T14:20:11.651Z [DEBUG] Skills and commands included in Skill tool:
+2025-12-06T14:20:11.652Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-12-06T14:20:12.764Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-06T14:20:12.764Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:20:12.764Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-06T14:20:24.663Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-06T14:20:24.663Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:20:24.663Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-06T14:20:25.950Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:161:14885)
+    at <anonymous> (/$bunfs/root/claude:175:10246)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:174:3466)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:177:2147)
+    at processTicksAndRejections (native:7:39)

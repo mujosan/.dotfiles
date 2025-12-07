@@ -1,0 +1,13 @@
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] Watching for changes in setting files /Users/martin/.claude/settings.json...
+[DEBUG] [LSP MANAGER] initializeLspServerManager() called
+[DEBUG] [LSP MANAGER] Created manager instance, state=pending
+[DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+[DEBUG] [LSP SERVER MANAGER] initialize() called
+[DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.2534.1763222916841
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41447 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.2534.1763222916841 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically

@@ -1,0 +1,825 @@
+2025-11-22T23:46:28.829Z [DEBUG] Watching for changes in setting files /Users/martin/.claude/settings.json...
+2025-11-22T23:46:28.980Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-22T23:46:28.981Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-22T23:46:28.981Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-22T23:46:28.981Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-22T23:46:28.981Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-22T23:46:29.031Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-22T23:46:29.043Z [DEBUG] Total LSP servers loaded: 0
+2025-11-22T23:46:29.064Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-22T23:46:29.064Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-22T23:46:29.071Z [DEBUG] LSP server manager initialized successfully
+2025-11-22T23:46:29.071Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-22T23:46:29.102Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/martin/.claude/skills, project=/Volumes/Data/Computing/Development/Rust/mp4renamer/.claude/skills
+2025-11-22T23:46:29.103Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-11-22T23:46:29.287Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-11-22T23:46:29.287Z [DEBUG] Looking for shell config file: /Users/martin/.zshrc
+2025-11-22T23:46:29.287Z [DEBUG] Snapshots directory: /Users/martin/.claude/shell-snapshots
+2025-11-22T23:46:29.290Z [DEBUG] Creating snapshot at: /Users/martin/.claude/shell-snapshots/snapshot-zsh-1763855189287-t8lsrp.sh
+2025-11-22T23:46:29.290Z [DEBUG] Shell binary exists: true
+2025-11-22T23:46:29.290Z [DEBUG] Execution timeout: 10000ms
+2025-11-22T23:46:29.292Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855189292
+2025-11-22T23:46:29.292Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-22T23:46:29.292Z [DEBUG] Renaming /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855189292 to /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json
+2025-11-22T23:46:29.293Z [DEBUG] File /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json written atomically
+2025-11-22T23:46:29.317Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-11-22T23:46:29.317Z [DEBUG] Total plugin skills loaded: 0
+2025-11-22T23:46:29.317Z [DEBUG] Total plugin commands loaded: 0
+2025-11-22T23:46:29.318Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-11-22T23:46:29.321Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-11-22T23:46:29.327Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-11-22T23:46:29.359Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855189359
+2025-11-22T23:46:29.359Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:29.360Z [DEBUG] Temp file written successfully, size: 45627 bytes
+2025-11-22T23:46:29.360Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:29.360Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855189359 to /Users/martin/.claude.json
+2025-11-22T23:46:29.360Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:29.367Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855189367
+2025-11-22T23:46:29.367Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:29.367Z [DEBUG] Temp file written successfully, size: 45627 bytes
+2025-11-22T23:46:29.367Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:29.367Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855189367 to /Users/martin/.claude.json
+2025-11-22T23:46:29.367Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:29.400Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855189400
+2025-11-22T23:46:29.400Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:29.400Z [DEBUG] Temp file written successfully, size: 45246 bytes
+2025-11-22T23:46:29.400Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:29.400Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855189400 to /Users/martin/.claude.json
+2025-11-22T23:46:29.400Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:29.406Z [DEBUG] Total plugin agents loaded: 0
+2025-11-22T23:46:29.684Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-11-22T23:46:29.689Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855189689
+2025-11-22T23:46:29.689Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:29.689Z [DEBUG] Temp file written successfully, size: 45246 bytes
+2025-11-22T23:46:29.689Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:29.689Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855189689 to /Users/martin/.claude.json
+2025-11-22T23:46:29.689Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:29.733Z [DEBUG] Git remote URL: http://10.23.17.182:3000/martin/mp4renamer.git
+2025-11-22T23:46:29.734Z [DEBUG] Could not parse repository from: http://10.23.17.182:3000/martin/mp4renamer.git
+2025-11-22T23:46:29.734Z [DEBUG] Parsed repository: null from URL: http://10.23.17.182:3000/martin/mp4renamer.git
+2025-11-22T23:46:29.735Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-11-22T23:46:30.271Z [DEBUG] MCP server "Ref": Initializing HTTP transport to https://api.ref.tools/mcp
+2025-11-22T23:46:30.272Z [DEBUG] MCP server "Ref": Node version: v24.3.0, Platform: darwin
+2025-11-22T23:46:30.272Z [DEBUG] MCP server "Ref": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-11-22T23:46:30.279Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855190279
+2025-11-22T23:46:30.279Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:30.279Z [DEBUG] Temp file written successfully, size: 45246 bytes
+2025-11-22T23:46:30.279Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:30.279Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855190279 to /Users/martin/.claude.json
+2025-11-22T23:46:30.279Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:30.295Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-11-22T23:46:30.295Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:46:30.295Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-11-22T23:46:30.300Z [DEBUG] MCP server "Ref": Proxy options: default
+2025-11-22T23:46:30.301Z [DEBUG] MCP server "Ref": HTTP transport options: {"url":"https://api.ref.tools/mcp","headers":{"User-Agent":"claude-code/2.0.50","x-ref-api-key":"ref-58df6a6523d2031f9159"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-11-22T23:46:30.303Z [DEBUG] MCP server "Ref": HTTP transport created successfully
+2025-11-22T23:46:30.329Z [DEBUG] MCP server "Ref": Client created, setting up request handler
+2025-11-22T23:46:30.331Z [DEBUG] MCP server "Ref": Starting connection with timeout of 30000ms
+2025-11-22T23:46:30.331Z [DEBUG] MCP server "Ref": Testing basic HTTP connectivity to https://api.ref.tools/mcp
+2025-11-22T23:46:30.331Z [DEBUG] MCP server "Ref": Parsed URL: host=api.ref.tools, port=default, protocol=https:
+2025-11-22T23:46:30.400Z [DEBUG] MCP server "Ref": No token data found
+2025-11-22T23:46:30.708Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855190708
+2025-11-22T23:46:30.708Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:30.708Z [DEBUG] Temp file written successfully, size: 45246 bytes
+2025-11-22T23:46:30.708Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:30.708Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855190708 to /Users/martin/.claude.json
+2025-11-22T23:46:30.709Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:30.710Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855190710
+2025-11-22T23:46:30.710Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:30.710Z [DEBUG] Temp file written successfully, size: 45246 bytes
+2025-11-22T23:46:30.710Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:30.710Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855190710 to /Users/martin/.claude.json
+2025-11-22T23:46:30.710Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:30.711Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:46:30.719Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:46:30.720Z [DEBUG] performStartupChecks called
+2025-11-22T23:46:30.720Z [DEBUG] Starting background plugin installations
+2025-11-22T23:46:30.720Z [DEBUG] performBackgroundPluginInstallations called
+2025-11-22T23:46:30.790Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:46:30.793Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:46:30.816Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855190816
+2025-11-22T23:46:30.816Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:30.817Z [DEBUG] Temp file written successfully, size: 45351 bytes
+2025-11-22T23:46:30.817Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:30.817Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855190816 to /Users/martin/.claude.json
+2025-11-22T23:46:30.817Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:30.850Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-11-22T23:46:30.863Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-11-22T23:46:30.949Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:46:31.084Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-11-22T23:46:31.085Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:46:31.085Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-11-22T23:46:31.108Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-11-22T23:46:31.108Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:46:31.109Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-11-22T23:46:31.116Z [DEBUG] Shell snapshot created successfully (51010 bytes)
+2025-11-22T23:46:31.119Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/local/Caskroom/claude-code/2.0.50/claude)
+2025-11-22T23:46:31.134Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855191134
+2025-11-22T23:46:31.135Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:31.135Z [DEBUG] Temp file written successfully, size: 45351 bytes
+2025-11-22T23:46:31.135Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:31.135Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855191134 to /Users/martin/.claude.json
+2025-11-22T23:46:31.135Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:31.321Z [DEBUG] MCP server "Ref": No token data found
+2025-11-22T23:46:31.661Z [DEBUG] MCP server "Ref": No token data found
+2025-11-22T23:46:31.662Z [DEBUG] MCP server "Ref": Successfully connected to http server in 1391ms
+2025-11-22T23:46:31.663Z [DEBUG] MCP server "Ref": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"Ref","title":"Ref","version":"3.0.0","websiteUrl":"https://ref.tools","icons":[{"src":"https://ref.tools/images/logo.png"}],"capabilities":{"prompts":{"listChanged":true},"tools":{}},"instructions":"Use ref_search_documentation and ref_read_url when working with libraries, frameworks or APIs to check the docs."}}
+2025-11-22T23:46:31.722Z [DEBUG] MCP server "Ref": No token data found
+2025-11-22T23:46:31.778Z [DEBUG] MCP server "Ref": No token data found
+2025-11-22T23:46:31.785Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:46:32.053Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:46:32.419Z [DEBUG] Skills and commands included in Skill tool:
+2025-11-22T23:46:32.419Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-11-22T23:46:33.372Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-11-22T23:46:33.372Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:46:33.372Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-22T23:46:35.229Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-11-22T23:46:35.229Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:46:35.229Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-22T23:46:35.827Z [DEBUG] npm view failed with code 1
+2025-11-22T23:46:35.827Z [DEBUG] npm stderr: (empty)
+2025-11-22T23:46:38.727Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855198727
+2025-11-22T23:46:38.727Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:38.728Z [DEBUG] Temp file written successfully, size: 45380 bytes
+2025-11-22T23:46:38.728Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:38.728Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855198727 to /Users/martin/.claude.json
+2025-11-22T23:46:38.728Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:41.926Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:46:41.927Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:46:43.580Z [DEBUG] MCP server "Ref": No token data found
+2025-11-22T23:46:45.526Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:46:46.954Z [DEBUG] npm view failed with code 1
+2025-11-22T23:46:46.954Z [DEBUG] npm stderr: (empty)
+2025-11-22T23:46:53.701Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:46:53.708Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:46:53.718Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855213718
+2025-11-22T23:46:53.718Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:53.718Z [DEBUG] Temp file written successfully, size: 45380 bytes
+2025-11-22T23:46:53.718Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:53.718Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855213718 to /Users/martin/.claude.json
+2025-11-22T23:46:53.718Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:46:53.739Z [DEBUG] UserCommandMessage rendering: "mcp" (args: "list")
+2025-11-22T23:46:53.739Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-22T23:46:53.778Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855213778
+2025-11-22T23:46:53.778Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:46:53.778Z [DEBUG] Temp file written successfully, size: 45380 bytes
+2025-11-22T23:46:53.778Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:46:53.778Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855213778 to /Users/martin/.claude.json
+2025-11-22T23:46:53.778Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:49:30.265Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:49:30.265Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:49:30.271Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:49:30.271Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:49:30.316Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-22T23:49:30.316Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:30.316Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-22T23:49:30.318Z [DEBUG] FileHistory: Added snapshot for 7a5f8958-69e0-4311-9882-68b5966e8b27, tracking 0 files
+2025-11-22T23:49:30.357Z [DEBUG] Total plugin output styles loaded: 0
+2025-11-22T23:49:30.896Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:49:32.031Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:49:37.040Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-22T23:49:37.045Z [DEBUG] executePreToolHooks called for tool: Glob
+2025-11-22T23:49:37.050Z [DEBUG] executePreToolHooks called for tool: Glob
+2025-11-22T23:49:37.060Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-22T23:49:37.060Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:37.061Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:49:37.061Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2025-11-22T23:49:37.061Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:37.061Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-11-22T23:49:37.061Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2025-11-22T23:49:37.061Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:37.061Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-11-22T23:49:37.061Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-22T23:49:37.065Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-22T23:49:37.065Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:37.065Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-22T23:49:37.589Z [DEBUG] No hook environment files found
+2025-11-22T23:49:37.597Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-22T23:49:37.598Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:37.598Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-22T23:49:37.833Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-22T23:49:37.833Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:37.833Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:49:38.481Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:49:38.594Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2025-11-22T23:49:38.594Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:38.594Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-11-22T23:49:38.703Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2025-11-22T23:49:38.703Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:38.703Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-11-22T23:49:38.733Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:49:38.733Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:49:38.740Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:49:38.740Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:49:40.180Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:49:41.989Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-22T23:49:41.993Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-22T23:49:41.993Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:41.993Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-22T23:49:42.019Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-22T23:49:42.019Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:49:42.020Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-22T23:49:42.042Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:49:42.042Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:49:42.048Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:49:42.048Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:49:43.633Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:49:45.837Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:49:51.886Z [DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+2025-11-22T23:49:52.134Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855392134
+2025-11-22T23:49:52.135Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:49:52.135Z [DEBUG] Temp file written successfully, size: 45416 bytes
+2025-11-22T23:49:52.135Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:49:52.135Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855392134 to /Users/martin/.claude.json
+2025-11-22T23:49:52.135Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:49:52.136Z [DEBUG] Applying permission update: Setting mode to 'plan'
+2025-11-22T23:50:05.224Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-22T23:50:05.228Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-22T23:50:05.228Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:50:05.228Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-22T23:50:05.240Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-22T23:50:05.366Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-22T23:50:05.383Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-22T23:50:05.383Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:50:05.383Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-22T23:50:11.346Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-22T23:50:11.346Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:50:11.347Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-22T23:50:20.648Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:50:44.481Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:50:44.490Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:50:44.499Z [DEBUG] FileHistory: Tracked file modification for /Volumes/Data/Computing/Development/Rust/mp4renamer/claude.md
+2025-11-22T23:50:45.507Z [DEBUG] rg error (signal=undefined, code=ABORT_ERR, stderr: warn: CPU lacks AVX support, strange crashes may occur. Reinstall Bun or use *-baseline build:
+  https://github.com/oven-sh/bun/releases/download/bun-v1.3.2/bun-darwin-x64-baseline.zip
+), 0 results
+2025-11-22T23:50:45.507Z [ERROR] AbortError: AbortError: The operation was aborted.
+    at unknown
+    at abortChildProcess (node:child_process:937:42)
+    at onAbortListener2 (node:child_process:35:24)
+    at abort (unknown)
+    at <anonymous> (/$bunfs/root/claude:4236:2197)
+2025-11-22T23:50:45.508Z [DEBUG] Writing to temp file: /Volumes/Data/Computing/Development/Rust/mp4renamer/claude.md.tmp.15205.1763855445508
+2025-11-22T23:50:45.948Z [DEBUG] Temp file written successfully, size: 3264 bytes
+2025-11-22T23:50:45.948Z [DEBUG] Renaming /Volumes/Data/Computing/Development/Rust/mp4renamer/claude.md.tmp.15205.1763855445508 to /Volumes/Data/Computing/Development/Rust/mp4renamer/claude.md
+2025-11-22T23:50:45.949Z [DEBUG] File /Volumes/Data/Computing/Development/Rust/mp4renamer/claude.md written atomically
+2025-11-22T23:50:45.959Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-22T23:50:45.959Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:50:45.959Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-22T23:50:45.995Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:50:45.995Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:50:45.999Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:50:45.999Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:50:47.672Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:50:54.574Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-22T23:50:54.574Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:50:54.574Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-22T23:50:54.591Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855454591
+2025-11-22T23:50:54.591Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:50:54.592Z [DEBUG] Temp file written successfully, size: 45416 bytes
+2025-11-22T23:50:54.592Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:50:54.592Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855454591 to /Users/martin/.claude.json
+2025-11-22T23:50:54.592Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:50:54.595Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855454595
+2025-11-22T23:50:54.595Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:50:54.595Z [DEBUG] Temp file written successfully, size: 45416 bytes
+2025-11-22T23:50:54.595Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:50:54.595Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855454595 to /Users/martin/.claude.json
+2025-11-22T23:50:54.595Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:51:01.348Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:52:18.446Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:52:18.447Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:52:18.452Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:52:18.452Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:52:18.481Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-22T23:52:18.482Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:52:18.482Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-22T23:52:18.483Z [DEBUG] FileHistory: Making snapshot for message c88f66ee-ee4b-4647-b170-0fbea5ea17d3
+2025-11-22T23:52:18.484Z [DEBUG] FileHistory: Added snapshot for c88f66ee-ee4b-4647-b170-0fbea5ea17d3, tracking 1 files
+2025-11-22T23:52:18.506Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855538506
+2025-11-22T23:52:18.507Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:52:18.507Z [DEBUG] Temp file written successfully, size: 45461 bytes
+2025-11-22T23:52:18.507Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:52:18.507Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855538506 to /Users/martin/.claude.json
+2025-11-22T23:52:18.507Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:52:19.412Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:52:20.009Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:52:30.031Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2025-11-22T23:52:30.035Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2025-11-22T23:52:30.035Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:52:30.035Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-22T23:52:30.064Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2025-11-22T23:52:30.069Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2025-11-22T23:52:30.069Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:52:30.069Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-22T23:52:33.914Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:52:36.058Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-22T23:52:36.058Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:52:36.058Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-22T23:53:39.297Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:53:39.308Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:53:39.326Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2025-11-22T23:53:39.326Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:53:39.326Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-22T23:53:39.351Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:53:39.351Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:53:39.356Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:53:39.357Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:53:41.956Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:53:53.830Z [DEBUG] executePreToolHooks called for tool: ExitPlanMode
+2025-11-22T23:53:53.833Z [DEBUG] Getting matching hook commands for PreToolUse with query: ExitPlanMode
+2025-11-22T23:53:53.833Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:53:53.833Z [DEBUG] Matched 0 unique hooks for query "ExitPlanMode" (0 before deduplication)
+2025-11-22T23:53:53.891Z [DEBUG] executePermissionRequestHooks called for tool: ExitPlanMode
+2025-11-22T23:53:53.899Z [DEBUG] Getting matching hook commands for PermissionRequest with query: ExitPlanMode
+2025-11-22T23:53:53.899Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:53:53.899Z [DEBUG] Matched 0 unique hooks for query "ExitPlanMode" (0 before deduplication)
+2025-11-22T23:53:54.728Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:53:59.879Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-22T23:53:59.879Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:53:59.880Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-22T23:54:52.958Z [DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+2025-11-22T23:54:52.963Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:54:52.970Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:54:52.986Z [DEBUG] Getting matching hook commands for PostToolUse with query: ExitPlanMode
+2025-11-22T23:54:52.986Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:54:52.986Z [DEBUG] Matched 0 unique hooks for query "ExitPlanMode" (0 before deduplication)
+2025-11-22T23:54:53.014Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:54:53.014Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:54:53.018Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:54:53.018Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:54:54.816Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:54:59.592Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-22T23:54:59.595Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-22T23:54:59.595Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:54:59.595Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:54:59.604Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855699604
+2025-11-22T23:54:59.604Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:54:59.604Z [DEBUG] Temp file written successfully, size: 722 bytes
+2025-11-22T23:54:59.604Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:54:59.604Z [DEBUG] Renaming /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855699604 to /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json
+2025-11-22T23:54:59.604Z [DEBUG] File /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json written atomically
+2025-11-22T23:54:59.617Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-22T23:54:59.617Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:54:59.617Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:54:59.638Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:54:59.638Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:54:59.643Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:54:59.643Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:01.684Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:05.090Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-11-22T23:55:05.094Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-11-22T23:55:05.094Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:05.094Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:05.105Z [DEBUG] FileHistory: Tracked file modification for /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs
+2025-11-22T23:55:05.112Z [DEBUG] Writing to temp file: /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855705112
+2025-11-22T23:55:05.112Z [DEBUG] Preserving file permissions: 100644
+2025-11-22T23:55:05.118Z [DEBUG] Temp file written successfully, size: 2787 bytes
+2025-11-22T23:55:05.118Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:55:05.118Z [DEBUG] Renaming /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855705112 to /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs
+2025-11-22T23:55:05.125Z [DEBUG] File /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs written atomically
+2025-11-22T23:55:05.135Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-11-22T23:55:05.135Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:05.135Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:05.179Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:05.179Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:05.184Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:05.184Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:06.537Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:08.379Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:55:10.408Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-11-22T23:55:10.411Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-11-22T23:55:10.411Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:10.411Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:10.427Z [DEBUG] Writing to temp file: /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855710427
+2025-11-22T23:55:10.427Z [DEBUG] Preserving file permissions: 100644
+2025-11-22T23:55:10.429Z [DEBUG] Temp file written successfully, size: 2920 bytes
+2025-11-22T23:55:10.429Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:55:10.429Z [DEBUG] Renaming /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855710427 to /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs
+2025-11-22T23:55:10.429Z [DEBUG] File /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs written atomically
+2025-11-22T23:55:10.437Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-11-22T23:55:10.437Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:10.437Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:10.468Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:10.468Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:10.474Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:10.474Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:12.772Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:17.305Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-22T23:55:17.310Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-22T23:55:17.310Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:17.310Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:55:17.321Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855717321
+2025-11-22T23:55:17.322Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:55:17.322Z [DEBUG] Temp file written successfully, size: 724 bytes
+2025-11-22T23:55:17.322Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:55:17.322Z [DEBUG] Renaming /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855717321 to /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json
+2025-11-22T23:55:17.322Z [DEBUG] File /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json written atomically
+2025-11-22T23:55:17.332Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-22T23:55:17.332Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:17.332Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:55:17.358Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:17.358Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:17.365Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:17.365Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:21.455Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:25.772Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:55:28.023Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-11-22T23:55:28.027Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-11-22T23:55:28.027Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:28.027Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:28.042Z [DEBUG] Writing to temp file: /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855728042
+2025-11-22T23:55:28.042Z [DEBUG] Preserving file permissions: 100644
+2025-11-22T23:55:28.052Z [DEBUG] Temp file written successfully, size: 3385 bytes
+2025-11-22T23:55:28.052Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:55:28.052Z [DEBUG] Renaming /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855728042 to /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs
+2025-11-22T23:55:28.052Z [DEBUG] File /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs written atomically
+2025-11-22T23:55:28.059Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-11-22T23:55:28.059Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:28.059Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:28.097Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:28.097Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:28.103Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:28.103Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:30.510Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:35.083Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-22T23:55:35.086Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-22T23:55:35.086Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:35.086Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:55:35.095Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855735095
+2025-11-22T23:55:35.095Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:55:35.096Z [DEBUG] Temp file written successfully, size: 726 bytes
+2025-11-22T23:55:35.096Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:55:35.096Z [DEBUG] Renaming /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855735095 to /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json
+2025-11-22T23:55:35.096Z [DEBUG] File /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json written atomically
+2025-11-22T23:55:35.105Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-22T23:55:35.105Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:35.105Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:55:35.127Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:35.127Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:35.133Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:35.134Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:36.871Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:43.399Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-11-22T23:55:43.404Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-11-22T23:55:43.404Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:43.404Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:43.421Z [DEBUG] Writing to temp file: /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855743421
+2025-11-22T23:55:43.421Z [DEBUG] Preserving file permissions: 100644
+2025-11-22T23:55:43.427Z [DEBUG] Temp file written successfully, size: 3621 bytes
+2025-11-22T23:55:43.427Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:55:43.427Z [DEBUG] Renaming /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855743421 to /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs
+2025-11-22T23:55:43.427Z [DEBUG] File /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs written atomically
+2025-11-22T23:55:43.435Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-11-22T23:55:43.435Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:43.435Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:55:43.466Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:43.466Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:43.472Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:43.473Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:43.499Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:55:46.549Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:50.437Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-22T23:55:50.442Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-22T23:55:50.442Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:50.442Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:55:50.453Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855750453
+2025-11-22T23:55:50.453Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:55:50.453Z [DEBUG] Temp file written successfully, size: 728 bytes
+2025-11-22T23:55:50.454Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:55:50.454Z [DEBUG] Renaming /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855750453 to /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json
+2025-11-22T23:55:50.454Z [DEBUG] File /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json written atomically
+2025-11-22T23:55:50.462Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-22T23:55:50.462Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:50.462Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:55:50.481Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:50.481Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:50.486Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:50.486Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:52.793Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:54.610Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-22T23:55:54.614Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-22T23:55:54.614Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:54.614Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-22T23:55:54.634Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-22T23:55:54.634Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:55:54.634Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-22T23:55:54.657Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:55:54.657Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:55:54.664Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:55:54.664Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:55:56.442Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:55:58.767Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:56:02.204Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-11-22T23:56:02.208Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-11-22T23:56:02.208Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:02.208Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:56:02.222Z [DEBUG] Writing to temp file: /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855762222
+2025-11-22T23:56:02.222Z [DEBUG] Preserving file permissions: 100644
+2025-11-22T23:56:02.227Z [DEBUG] Temp file written successfully, size: 3809 bytes
+2025-11-22T23:56:02.227Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:56:02.227Z [DEBUG] Renaming /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs.tmp.15205.1763855762222 to /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs
+2025-11-22T23:56:02.228Z [DEBUG] File /Volumes/Data/Computing/Development/Rust/mp4renamer/src/main.rs written atomically
+2025-11-22T23:56:02.235Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-11-22T23:56:02.235Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:02.235Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-22T23:56:02.289Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:56:02.289Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:56:02.296Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:56:02.296Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:56:04.012Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:08.501Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-22T23:56:08.505Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-22T23:56:08.505Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:08.505Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:56:08.515Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855768515
+2025-11-22T23:56:08.515Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:56:08.515Z [DEBUG] Temp file written successfully, size: 730 bytes
+2025-11-22T23:56:08.515Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:56:08.515Z [DEBUG] Renaming /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855768515 to /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json
+2025-11-22T23:56:08.515Z [DEBUG] File /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json written atomically
+2025-11-22T23:56:08.526Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-22T23:56:08.526Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:08.526Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:56:08.544Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:56:08.544Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:56:08.549Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:56:08.549Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:56:12.728Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:14.157Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-22T23:56:14.161Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-22T23:56:14.161Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:14.161Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:56:14.805Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:14.840Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "cargo build:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-22T23:56:14.863Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-22T23:56:14.867Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2025-11-22T23:56:14.867Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:14.867Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:56:17.586Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:56:20.862Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-22T23:56:20.863Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:20.863Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-22T23:56:40.071Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:56:40.080Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:56:44.078Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-22T23:56:44.079Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:44.079Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:56:44.106Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:56:44.106Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:56:44.111Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:56:44.111Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:56:44.682Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:45.432Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:47.115Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-22T23:56:47.120Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-22T23:56:47.120Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:47.120Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:56:47.955Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:48.112Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "cargo run:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-22T23:56:48.134Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-22T23:56:48.139Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2025-11-22T23:56:48.139Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:48.139Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:56:54.133Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-22T23:56:54.134Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:54.134Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-22T23:56:54.760Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:56:54.771Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:56:55.368Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-22T23:56:55.369Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:56:55.369Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-22T23:56:55.397Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:56:55.397Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:56:55.402Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:56:55.402Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:56:56.023Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:57.553Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:56:59.558Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:57:01.249Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-22T23:57:01.252Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-22T23:57:01.252Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:57:01.252Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:57:01.262Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855821262
+2025-11-22T23:57:01.262Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:57:01.262Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-22T23:57:01.263Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:57:01.263Z [DEBUG] Renaming /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json.tmp.15205.1763855821262 to /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json
+2025-11-22T23:57:01.263Z [DEBUG] File /Users/martin/.claude/todos/e0992173-d704-47b2-a2d8-76fe34e9f66c-agent-e0992173-d704-47b2-a2d8-76fe34e9f66c.json written atomically
+2025-11-22T23:57:01.274Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-22T23:57:01.274Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:57:01.274Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-22T23:57:01.292Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-22T23:57:01.292Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-22T23:57:01.297Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-22T23:57:01.297Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-22T23:57:03.520Z [DEBUG] Stream started - received first chunk
+2025-11-22T23:57:10.637Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-22T23:57:10.637Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:57:10.637Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-22T23:57:10.651Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855830651
+2025-11-22T23:57:10.651Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:57:10.651Z [DEBUG] Temp file written successfully, size: 45461 bytes
+2025-11-22T23:57:10.651Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:57:10.651Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855830651 to /Users/martin/.claude.json
+2025-11-22T23:57:10.651Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:57:10.655Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855830655
+2025-11-22T23:57:10.655Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:57:10.655Z [DEBUG] Temp file written successfully, size: 45461 bytes
+2025-11-22T23:57:10.655Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:57:10.655Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855830655 to /Users/martin/.claude.json
+2025-11-22T23:57:10.655Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:57:16.629Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14722)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-22T23:57:39.642Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855859642
+2025-11-22T23:57:39.642Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:57:39.642Z [DEBUG] Temp file written successfully, size: 45461 bytes
+2025-11-22T23:57:39.642Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:57:39.643Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855859642 to /Users/martin/.claude.json
+2025-11-22T23:57:39.643Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:57:39.644Z [DEBUG] Applying permission update: Setting mode to 'plan'
+2025-11-22T23:57:44.457Z [DEBUG] Applying permission update: Setting mode to 'default'
+2025-11-22T23:57:47.255Z [DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+2025-11-22T23:57:57.655Z [DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.50/claude
+2025-11-22T23:57:57.679Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2025-11-22T23:57:57.685Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2025-11-22T23:57:57.685Z [DEBUG] Found 0 hook matchers in settings
+2025-11-22T23:57:57.685Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2025-11-22T23:57:57.690Z [DEBUG] Cleaned up session snapshot: /Users/martin/.claude/shell-snapshots/snapshot-zsh-1763855189287-t8lsrp.sh
+2025-11-22T23:57:57.694Z [DEBUG] MCP server "Ref": HTTP transport closed/disconnected, attempting automatic reconnection
+2025-11-22T23:57:57.702Z [DEBUG] LSP server manager shut down successfully
+2025-11-22T23:57:57.708Z [DEBUG] FileHistory: Making snapshot for message 4f555bef-f6fc-4441-9ca0-56ed30e7fdaf
+2025-11-22T23:57:57.709Z [DEBUG] FileHistory: Added snapshot for 4f555bef-f6fc-4441-9ca0-56ed30e7fdaf, tracking 2 files
+2025-11-22T23:57:57.715Z [DEBUG] Rendering user message with 1 content blocks
+2025-11-22T23:57:57.715Z [DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+2025-11-22T23:57:57.716Z [DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+2025-11-22T23:57:57.716Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-22T23:57:57.755Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855877755
+2025-11-22T23:57:57.755Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:57:57.756Z [DEBUG] Temp file written successfully, size: 45461 bytes
+2025-11-22T23:57:57.756Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:57:57.756Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855877755 to /Users/martin/.claude.json
+2025-11-22T23:57:57.756Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-11-22T23:57:57.757Z [DEBUG] MCP server "Ref": Initializing HTTP transport to https://api.ref.tools/mcp
+2025-11-22T23:57:57.757Z [DEBUG] MCP server "Ref": Node version: v24.3.0, Platform: darwin
+2025-11-22T23:57:57.757Z [DEBUG] MCP server "Ref": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-11-22T23:57:57.758Z [DEBUG] MCP server "Ref": Proxy options: default
+2025-11-22T23:57:57.758Z [DEBUG] MCP server "Ref": HTTP transport options: {"url":"https://api.ref.tools/mcp","headers":{"User-Agent":"claude-code/2.0.50","x-ref-api-key":"ref-58df6a6523d2031f9159"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-11-22T23:57:57.759Z [DEBUG] MCP server "Ref": HTTP transport created successfully
+2025-11-22T23:57:57.764Z [DEBUG] MCP server "Ref": Client created, setting up request handler
+2025-11-22T23:57:57.764Z [DEBUG] MCP server "Ref": Starting connection with timeout of 30000ms
+2025-11-22T23:57:57.764Z [DEBUG] MCP server "Ref": Testing basic HTTP connectivity to https://api.ref.tools/mcp
+2025-11-22T23:57:57.765Z [DEBUG] MCP server "Ref": Parsed URL: host=api.ref.tools, port=default, protocol=https:
+2025-11-22T23:57:57.768Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.15205.1763855877768
+2025-11-22T23:57:57.768Z [DEBUG] Preserving file permissions: 100600
+2025-11-22T23:57:57.768Z [DEBUG] Temp file written successfully, size: 45885 bytes
+2025-11-22T23:57:57.768Z [DEBUG] Applied original permissions to temp file
+2025-11-22T23:57:57.768Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.15205.1763855877768 to /Users/martin/.claude.json
+2025-11-22T23:57:57.768Z [DEBUG] File /Users/martin/.claude.json written atomically

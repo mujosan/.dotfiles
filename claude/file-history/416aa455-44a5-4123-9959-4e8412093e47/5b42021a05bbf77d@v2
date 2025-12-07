@@ -1,0 +1,542 @@
+use clap::Parser;
+use std::fs;
+use std::io;
+use std::path::{Path, PathBuf};
+use chrono::{DateTime, Local, NaiveDate, Timelike};
+use std::ffi::OsStr;
+use std::process::Command;
+
+/// Rename and copy .MP4 files from a source directory to a destination directory
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+struct Args {
+    /// Path to the source directory
+    #[arg(short, long)]
+    source: String,
+
+    /// Path to the destination directory
+    #[arg(short, long)]
+    destination: String,
+
+    /// Optional date filter (YYYY-MM-DD format) to only copy files created on this date
+    #[arg(long)]
+    date: Option<String>,
+
+    /// Optional time range filter (24-hour format) to only copy files created within this hour range
+    /// Supported formats: "9-13", "9till13", "from9to13"
+    #[arg(long)]
+    time: Option<String>,
+}
+
+#[derive(Debug, Clone, Copy)]
+struct TimeRange {
+    start_hour: u32,
+    end_hour: u32,
+}
+
+impl TimeRange {
+    fn parse(s: &str) -> Result<Self, String> {
+        // Remove whitespace
+        let s = s.replace(' ', "");
+
+        // Try to parse different formats
+        let (start, end) = if let Some((start, end)) = s.split_once('-') {
+            // Format: "9-13"
+            (start, end)
+        } else if let Some(idx) = s.to_lowercase().find("till") {
+            // Format: "9till13"
+            let start = &s[..idx];
+            let end = &s[idx + 4..];
+            (start, end)
+        } else if s.to_lowercase().starts_with("from") && s.to_lowercase().contains("to") {
+            // Format: "from9to13"
+            let s_lower = s.to_lowercase();
+            let from_idx = s_lower.find("from").unwrap();
+            let to_idx = s_lower.find("to").unwrap();
+
+            let start = &s[from_idx + 4..to_idx];
+            let end = &s[to_idx + 2..];
+            (start, end)
+        } else {
+            return Err(format!("Invalid time range format: '{}'. Use formats like '9-13', '9till13', or 'from9to13'", s));
+        };
+
+        let start_hour: u32 = start.trim().parse()
+            .map_err(|_| format!("Invalid start hour: '{}'", start))?;
+        let end_hour: u32 = end.trim().parse()
+            .map_err(|_| format!("Invalid end hour: '{}'", end))?;
+
+        if start_hour > 23 || end_hour > 23 {
+            return Err(format!("Hours must be between 0 and 23 (24-hour format)"));
+        }
+
+        if start_hour > end_hour {
+            return Err(format!("Start hour ({}) must be less than or equal to end hour ({})", start_hour, end_hour));
+        }
+
+        Ok(TimeRange { start_hour, end_hour })
+    }
+
+    fn contains_hour(&self, hour: u32) -> bool {
+        hour >= self.start_hour && hour <= self.end_hour
+    }
+}
+
+fn main() -> io::Result<()> {
+    let args = Args::parse();
+
+    let source_dir = Path::new(&args.source);
+    let destination_dir = Path::new(&args.destination);
+
+    // Parse and validate the date filter if provided
+    let date_filter: Option<NaiveDate> = if let Some(date_str) = &args.date {
+        match NaiveDate::parse_from_str(date_str, "%Y-%m-%d") {
+            Ok(date) => Some(date),
+            Err(_) => {
+                eprintln!("Error: invalid date format '{}'. Expected YYYY-MM-DD (e.g., 2024-08-04)", date_str);
+                std::process::exit(1);
+            }
+        }
+    } else {
+        None
+    };
+
+    // Parse and validate the time range filter if provided
+    let time_filter: Option<TimeRange> = if let Some(time_str) = &args.time {
+        match TimeRange::parse(time_str) {
+            Ok(range) => Some(range),
+            Err(e) => {
+                eprintln!("Error: {}", e);
+                std::process::exit(1);
+            }
+        }
+    } else {
+        None
+    };
+
+    if !source_dir.is_dir() {
+        eprintln!("Error: source path is not a directory or doesn't exist.");
+        std::process::exit(1);
+    }
+
+    if !destination_dir.is_dir() {
+        eprintln!("Error: destination path is not a directory or doesn't exist.");
+        std::process::exit(1);
+    }
+
+    // Clear user immutable flag on macOS systems
+    clear_immutable_flag(source_dir);
+
+    for entry in fs::read_dir(source_dir)? {
+        let entry = entry?;
+        let path = entry.path();
+
+        if path.is_file() && is_mp4(&path) && !is_appledot_file(&path){
+            match get_creation_time(&path) {
+                Ok(datetime) => {
+                    // Check if the file matches the date and time filters
+                    if matches_filters(&datetime, date_filter, time_filter) {
+                        let base_name = datetime.format("%Y%m%d-%H%M%S").to_string();
+                        let new_path = generate_unique_filename(destination_dir, &base_name);
+
+                        println!(
+                            "Copying {:?} -> {:?}",
+                            path.file_name().unwrap(),
+                            new_path.file_name().unwrap()
+                        );
+
+                        fs::copy(&path, &new_path)?;
+                    }
+                }
+                Err(e) => eprintln!("Failed to get creation time for {:?}: {}", path, e),
+            }
+        }
+    }
+
+    Ok(())
+}
+
+fn clear_immutable_flag(source_dir: &Path) {
+    #[cfg(target_os = "macos")]
+    {
+        println!("Clearing user immutable flags in source directory...");
+        match Command::new("chflags")
+            .arg("-R")
+            .arg("nouchg")
+            .arg(source_dir)
+            .output()
+        {
+            Ok(output) => {
+                if !output.status.success() {
+                    eprintln!(
+                        "Warning: failed to clear immutable flags: {}",
+                        String::from_utf8_lossy(&output.stderr)
+                    );
+                }
+            }
+            Err(e) => {
+                eprintln!("Warning: failed to execute chflags command: {}", e);
+            }
+        }
+    }
+
+    #[cfg(not(target_os = "macos"))]
+    {
+        // On non-macOS systems, this is a no-op
+        let _ = source_dir; // Suppress unused variable warning
+    }
+}
+
+fn is_mp4(path: &Path) -> bool {
+    path.extension()
+        .and_then(OsStr::to_str)
+        .map(|ext| ext.eq_ignore_ascii_case("mp4"))
+        .unwrap_or(false)
+}
+ 
+fn is_appledot_file(path: &Path) -> bool {
+    path.file_name()
+        .and_then(OsStr::to_str)
+        .map(|name| name.starts_with("._"))
+        .unwrap_or(false)
+}
+
+fn get_creation_time(path: &Path) -> io::Result<DateTime<Local>> {
+    let metadata = fs::metadata(path)?;
+    let system_time = metadata
+        .created()
+        .or_else(|_| metadata.modified())?;
+    Ok(DateTime::<Local>::from(system_time))
+}
+
+fn matches_filters(datetime: &DateTime<Local>, date_filter: Option<NaiveDate>, time_filter: Option<TimeRange>) -> bool {
+    // Check date filter
+    let date_matches = match date_filter {
+        None => true, // No filter, match everything
+        Some(filter_date) => datetime.date_naive() == filter_date,
+    };
+
+    // Check time filter
+    let time_matches = match time_filter {
+        None => true, // No filter, match everything
+        Some(range) => range.contains_hour(datetime.hour()),
+    };
+
+    date_matches && time_matches
+}
+
+fn generate_unique_filename(dir: &Path, base: &str) -> PathBuf {
+    let mut counter = 0;
+    loop {
+        let filename = if counter == 0 {
+            format!("{}.MP4", base)
+        } else {
+            format!("{}({}).MP4", base, counter)
+        };
+        let full_path = dir.join(filename);
+        if !full_path.exists() {
+            return full_path;
+        }
+        counter += 1;
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use std::fs;
+    use tempfile::TempDir;
+
+    // Tests for is_mp4()
+    #[test]
+    fn test_is_mp4_with_lowercase_extension() {
+        let path = Path::new("test.mp4");
+        assert!(is_mp4(path));
+    }
+
+    #[test]
+    fn test_is_mp4_with_uppercase_extension() {
+        let path = Path::new("test.MP4");
+        assert!(is_mp4(path));
+    }
+
+    #[test]
+    fn test_is_mp4_with_mixed_case_extension() {
+        let path = Path::new("test.Mp4");
+        assert!(is_mp4(path));
+    }
+
+    #[test]
+    fn test_is_mp4_with_non_mp4_extension() {
+        let path = Path::new("test.txt");
+        assert!(!is_mp4(path));
+    }
+
+    #[test]
+    fn test_is_mp4_with_no_extension() {
+        let path = Path::new("test");
+        assert!(!is_mp4(path));
+    }
+
+    #[test]
+    fn test_is_mp4_with_multiple_dots() {
+        let path = Path::new("test.backup.mp4");
+        assert!(is_mp4(path));
+    }
+
+    // Tests for is_appledot_file()
+    #[test]
+    fn test_is_appledot_file_with_prefix() {
+        let path = Path::new("._test.mp4");
+        assert!(is_appledot_file(path));
+    }
+
+    #[test]
+    fn test_is_appledot_file_without_prefix() {
+        let path = Path::new("test.mp4");
+        assert!(!is_appledot_file(path));
+    }
+
+    #[test]
+    fn test_is_appledot_file_with_underscore_only() {
+        let path = Path::new("_test.mp4");
+        assert!(!is_appledot_file(path));
+    }
+
+    #[test]
+    fn test_is_appledot_file_with_dot_only() {
+        let path = Path::new(".test.mp4");
+        assert!(!is_appledot_file(path));
+    }
+
+    // Tests for TimeRange::parse()
+    #[test]
+    fn test_time_range_parse_dash_format() {
+        let range = TimeRange::parse("9-13").unwrap();
+        assert_eq!(range.start_hour, 9);
+        assert_eq!(range.end_hour, 13);
+    }
+
+    #[test]
+    fn test_time_range_parse_dash_format_with_spaces() {
+        let range = TimeRange::parse("9 - 13").unwrap();
+        assert_eq!(range.start_hour, 9);
+        assert_eq!(range.end_hour, 13);
+    }
+
+    #[test]
+    fn test_time_range_parse_till_format() {
+        let range = TimeRange::parse("9till13").unwrap();
+        assert_eq!(range.start_hour, 9);
+        assert_eq!(range.end_hour, 13);
+    }
+
+    #[test]
+    fn test_time_range_parse_till_format_with_spaces() {
+        let range = TimeRange::parse("9 till 13").unwrap();
+        assert_eq!(range.start_hour, 9);
+        assert_eq!(range.end_hour, 13);
+    }
+
+    #[test]
+    fn test_time_range_parse_from_to_format() {
+        let range = TimeRange::parse("from9to13").unwrap();
+        assert_eq!(range.start_hour, 9);
+        assert_eq!(range.end_hour, 13);
+    }
+
+    #[test]
+    fn test_time_range_parse_from_to_format_with_spaces() {
+        let range = TimeRange::parse("from 9 to 13").unwrap();
+        assert_eq!(range.start_hour, 9);
+        assert_eq!(range.end_hour, 13);
+    }
+
+    #[test]
+    fn test_time_range_parse_zero_hour() {
+        let range = TimeRange::parse("0-5").unwrap();
+        assert_eq!(range.start_hour, 0);
+        assert_eq!(range.end_hour, 5);
+    }
+
+    #[test]
+    fn test_time_range_parse_twenty_three_hour() {
+        let range = TimeRange::parse("20-23").unwrap();
+        assert_eq!(range.start_hour, 20);
+        assert_eq!(range.end_hour, 23);
+    }
+
+    #[test]
+    fn test_time_range_parse_same_hours() {
+        let range = TimeRange::parse("10-10").unwrap();
+        assert_eq!(range.start_hour, 10);
+        assert_eq!(range.end_hour, 10);
+    }
+
+    #[test]
+    fn test_time_range_parse_invalid_start_greater_than_end() {
+        let result = TimeRange::parse("15-10");
+        assert!(result.is_err());
+        assert!(result.unwrap_err().contains("Start hour"));
+    }
+
+    #[test]
+    fn test_time_range_parse_invalid_hour_over_23() {
+        let result = TimeRange::parse("10-25");
+        assert!(result.is_err());
+        assert!(result.unwrap_err().contains("must be between 0 and 23"));
+    }
+
+    #[test]
+    fn test_time_range_parse_invalid_format() {
+        let result = TimeRange::parse("invalid");
+        assert!(result.is_err());
+        assert!(result.unwrap_err().contains("Invalid time range format"));
+    }
+
+    #[test]
+    fn test_time_range_parse_non_numeric() {
+        let result = TimeRange::parse("abc-def");
+        assert!(result.is_err());
+        assert!(result.unwrap_err().contains("Invalid start hour"));
+    }
+
+    // Tests for TimeRange::contains_hour()
+    #[test]
+    fn test_time_range_contains_hour_in_range() {
+        let range = TimeRange { start_hour: 9, end_hour: 13 };
+        assert!(range.contains_hour(9));
+        assert!(range.contains_hour(10));
+        assert!(range.contains_hour(11));
+        assert!(range.contains_hour(12));
+        assert!(range.contains_hour(13));
+    }
+
+    #[test]
+    fn test_time_range_contains_hour_out_of_range() {
+        let range = TimeRange { start_hour: 9, end_hour: 13 };
+        assert!(!range.contains_hour(8));
+        assert!(!range.contains_hour(14));
+    }
+
+    #[test]
+    fn test_time_range_contains_hour_edge_cases() {
+        let range = TimeRange { start_hour: 0, end_hour: 23 };
+        assert!(range.contains_hour(0));
+        assert!(range.contains_hour(23));
+    }
+
+    // Tests for matches_filters()
+    #[test]
+    fn test_matches_filters_no_filters() {
+        let datetime = Local::now();
+        assert!(matches_filters(&datetime, None, None));
+    }
+
+    #[test]
+    fn test_matches_filters_date_filter_match() {
+        let datetime = Local::now();
+        let date_filter = Some(datetime.date_naive());
+        assert!(matches_filters(&datetime, date_filter, None));
+    }
+
+    #[test]
+    fn test_matches_filters_date_filter_no_match() {
+        let datetime = Local::now();
+        let date_filter = Some(NaiveDate::from_ymd_opt(2020, 1, 1).unwrap());
+        assert!(!matches_filters(&datetime, date_filter, None));
+    }
+
+    #[test]
+    fn test_matches_filters_time_filter_match() {
+        let datetime = Local::now();
+        let current_hour = datetime.hour();
+        let time_filter = Some(TimeRange {
+            start_hour: current_hour,
+            end_hour: current_hour,
+        });
+        assert!(matches_filters(&datetime, None, time_filter));
+    }
+
+    #[test]
+    fn test_matches_filters_time_filter_no_match() {
+        let datetime = Local::now();
+        let current_hour = datetime.hour();
+        let different_hour = (current_hour + 12) % 24;
+        let time_filter = Some(TimeRange {
+            start_hour: different_hour,
+            end_hour: different_hour,
+        });
+        assert!(!matches_filters(&datetime, None, time_filter));
+    }
+
+    #[test]
+    fn test_matches_filters_both_filters_match() {
+        let datetime = Local::now();
+        let date_filter = Some(datetime.date_naive());
+        let current_hour = datetime.hour();
+        let time_filter = Some(TimeRange {
+            start_hour: current_hour,
+            end_hour: current_hour,
+        });
+        assert!(matches_filters(&datetime, date_filter, time_filter));
+    }
+
+    #[test]
+    fn test_matches_filters_date_match_time_no_match() {
+        let datetime = Local::now();
+        let date_filter = Some(datetime.date_naive());
+        let current_hour = datetime.hour();
+        let different_hour = (current_hour + 12) % 24;
+        let time_filter = Some(TimeRange {
+            start_hour: different_hour,
+            end_hour: different_hour,
+        });
+        assert!(!matches_filters(&datetime, date_filter, time_filter));
+    }
+
+    // Tests for generate_unique_filename()
+    #[test]
+    fn test_generate_unique_filename_no_conflicts() {
+        let temp_dir = TempDir::new().unwrap();
+        let result = generate_unique_filename(temp_dir.path(), "20240101-120000");
+        assert_eq!(result.file_name().unwrap(), "20240101-120000.MP4");
+    }
+
+    #[test]
+    fn test_generate_unique_filename_with_one_conflict() {
+        let temp_dir = TempDir::new().unwrap();
+        let first_file = temp_dir.path().join("20240101-120000.MP4");
+        fs::File::create(&first_file).unwrap();
+
+        let result = generate_unique_filename(temp_dir.path(), "20240101-120000");
+        assert_eq!(result.file_name().unwrap(), "20240101-120000(1).MP4");
+    }
+
+    #[test]
+    fn test_generate_unique_filename_with_multiple_conflicts() {
+        let temp_dir = TempDir::new().unwrap();
+        let base = "20240101-120000";
+
+        fs::File::create(temp_dir.path().join(format!("{}.MP4", base))).unwrap();
+        fs::File::create(temp_dir.path().join(format!("{}(1).MP4", base))).unwrap();
+        fs::File::create(temp_dir.path().join(format!("{}(2).MP4", base))).unwrap();
+
+        let result = generate_unique_filename(temp_dir.path(), base);
+        assert_eq!(result.file_name().unwrap(), "20240101-120000(3).MP4");
+    }
+
+    #[test]
+    fn test_generate_unique_filename_preserves_directory() {
+        let temp_dir = TempDir::new().unwrap();
+        let result = generate_unique_filename(temp_dir.path(), "test");
+        assert_eq!(result.parent().unwrap(), temp_dir.path());
+    }
+
+    #[test]
+    fn test_generate_unique_filename_uppercase_extension() {
+        let temp_dir = TempDir::new().unwrap();
+        let result = generate_unique_filename(temp_dir.path(), "test");
+        assert!(result.to_str().unwrap().ends_with(".MP4"));
+    }
+}

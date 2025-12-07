@@ -1,0 +1,2 @@
+{"type":"summary","summary":"API Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"`clear_thinking_20251015` strategy requires `thinking` to be enabled\"},\"request_id\":\"req_011CVPnQ8LfH48UsacYPU33F\"}","leafUuid":"6f24f2be-afd3-4896-afb7-a045c0db0d09"}
+{"type":"file-history-snapshot","messageId":"535a2374-6f03-4513-842f-0a85c545e9ed","snapshot":{"messageId":"535a2374-6f03-4513-842f-0a85c545e9ed","trackedFileBackups":{},"timestamp":"2025-11-22T23:20:31.664Z"},"isSnapshotUpdate":false}

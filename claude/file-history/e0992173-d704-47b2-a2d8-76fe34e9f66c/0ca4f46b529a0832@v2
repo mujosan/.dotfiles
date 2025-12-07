@@ -1,0 +1,107 @@
+# MP4 Renamer
+
+A Rust command-line tool that copies MP4 files from a source directory to a destination directory, renaming them based on their creation timestamp.
+
+## Purpose
+
+This tool is designed to organize MP4 files by automatically renaming them with their creation date and time. This is particularly useful for organizing video files from cameras, phones, or other devices where files may have generic or sequential names.
+
+## Features
+
+- **Timestamp-based renaming**: Files are renamed using the format `YYYYMMDD-HHMMSS.MP4`
+- **Duplicate handling**: If multiple files have the same timestamp, a counter is added: `YYYYMMDD-HHMMSS(1).MP4`
+- **Safe copying**: Files are copied (not moved), preserving the originals
+- **Apple metadata filtering**: Automatically skips macOS "._" (AppleDouble) files
+- **Fallback behavior**: Uses modified time if creation time is unavailable
+
+## Usage
+
+```bash
+cargo run -- --source /path/to/source --destination /path/to/destination
+```
+
+Or after building:
+
+```bash
+mp4renamer --source /path/to/source --destination /path/to/destination
+```
+
+### Arguments
+
+- `-s, --source <PATH>`: Path to the source directory containing MP4 files
+- `-d, --destination <PATH>`: Path to the destination directory where renamed files will be copied
+
+## Project Structure
+
+```
+mp4renamer/
+├── Cargo.toml          # Project dependencies and metadata
+├── Cargo.lock          # Locked dependency versions
+└── src/
+    └── main.rs         # Main application code
+```
+
+## Dependencies
+
+- **clap** (v4.5): Command-line argument parsing with derive macros
+- **chrono** (v0.4): Date and time handling for timestamp formatting
+
+## Code Overview
+
+### Key Functions
+
+1. **`main()`** (src/main.rs:21-61)
+   - Parses command-line arguments
+   - Validates source and destination directories
+   - Iterates through source directory
+   - Processes each MP4 file
+
+2. **`is_mp4()`** (src/main.rs:63-68)
+   - Checks if a file has an .mp4 extension (case-insensitive)
+
+3. **`is_appledot_file()`** (src/main.rs:70-75)
+   - Filters out macOS AppleDouble files (starting with "._")
+
+4. **`get_creation_time()`** (src/main.rs:77-83)
+   - Retrieves file creation time
+   - Falls back to modified time if creation time is unavailable
+
+5. **`generate_unique_filename()`** (src/main.rs:85-99)
+   - Creates a unique filename in the destination directory
+   - Adds counter suffix if filename already exists
+
+## Behavior Notes
+
+- Only processes files with .MP4 extension (case-insensitive)
+- Skips subdirectories - only processes files in the top level of source directory
+- Output files are always named with uppercase .MP4 extension
+- Error messages are printed to stderr for individual file failures
+- The program continues processing remaining files if one file fails
+
+## Development
+
+### Building
+
+```bash
+cargo build --release
+```
+
+### Running
+
+```bash
+cargo run -- --source <SOURCE_DIR> --destination <DEST_DIR>
+```
+
+### Edition
+
+This project uses Rust edition 2024.
+
+## Future Enhancements (Potential)
+
+- Recursive directory scanning
+- Support for other video formats
+- Option to move instead of copy
+- Dry-run mode to preview changes
+- Progress bar for large batches
+- Configurable date format
+- Duplicate detection (skip if same file already exists in destination)

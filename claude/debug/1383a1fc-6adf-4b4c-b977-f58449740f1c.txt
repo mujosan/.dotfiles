@@ -1,0 +1,2 @@
+2025-12-07T12:15:21.787Z [DEBUG] [Query.streamInput] Starting to process input stream
+2025-12-07T12:15:21.792Z [DEBUG] [Query.streamInput] this.sdkMcpTransports.size = 1

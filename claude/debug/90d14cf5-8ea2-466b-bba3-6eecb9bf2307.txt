@@ -1,0 +1,90 @@
+2025-12-06T14:09:03.945Z [DEBUG] Watching for changes in setting files /Users/martin/.claude/settings.json...
+2025-12-06T14:09:04.081Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-06T14:09:04.081Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-06T14:09:04.081Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-06T14:09:04.081Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-06T14:09:04.081Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-06T14:09:04.091Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-06T14:09:04.094Z [DEBUG] Total LSP servers loaded: 0
+2025-12-06T14:09:04.094Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-06T14:09:04.094Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-06T14:09:04.094Z [DEBUG] LSP server manager initialized successfully
+2025-12-06T14:09:04.094Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-06T14:09:04.100Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/martin/.claude/skills, project=/Volumes/Data/Computing/Development/Claude/.claude/skills
+2025-12-06T14:09:04.100Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-06T14:09:04.184Z [DEBUG] installed_plugins.json doesn't exist yet at /Users/martin/.claude/plugins/installed_plugins.json, returning empty object
+2025-12-06T14:09:04.253Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-06T14:09:04.253Z [DEBUG] Looking for shell config file: /Users/martin/.zshrc
+2025-12-06T14:09:04.253Z [DEBUG] Snapshots directory: /Users/martin/.claude/shell-snapshots
+2025-12-06T14:09:04.253Z [DEBUG] Creating snapshot at: /Users/martin/.claude/shell-snapshots/snapshot-zsh-1765030144253-x049rv.sh
+2025-12-06T14:09:04.254Z [DEBUG] Shell binary exists: true
+2025-12-06T14:09:04.254Z [DEBUG] Execution timeout: 10000ms
+2025-12-06T14:09:04.255Z [DEBUG] Writing to temp file: /Users/martin/.claude/todos/90d14cf5-8ea2-466b-bba3-6eecb9bf2307-agent-90d14cf5-8ea2-466b-bba3-6eecb9bf2307.json.tmp.10671.1765030144255
+2025-12-06T14:09:04.258Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-06T14:09:04.258Z [DEBUG] Renaming /Users/martin/.claude/todos/90d14cf5-8ea2-466b-bba3-6eecb9bf2307-agent-90d14cf5-8ea2-466b-bba3-6eecb9bf2307.json.tmp.10671.1765030144255 to /Users/martin/.claude/todos/90d14cf5-8ea2-466b-bba3-6eecb9bf2307-agent-90d14cf5-8ea2-466b-bba3-6eecb9bf2307.json
+2025-12-06T14:09:04.258Z [DEBUG] File /Users/martin/.claude/todos/90d14cf5-8ea2-466b-bba3-6eecb9bf2307-agent-90d14cf5-8ea2-466b-bba3-6eecb9bf2307.json written atomically
+2025-12-06T14:09:04.263Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-06T14:09:04.263Z [DEBUG] Total plugin skills loaded: 0
+2025-12-06T14:09:04.263Z [DEBUG] Total plugin commands loaded: 0
+2025-12-06T14:09:04.263Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-06T14:09:04.270Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-06T14:09:04.283Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-12-06T14:09:04.318Z [DEBUG] Git remote URL: null
+2025-12-06T14:09:04.318Z [DEBUG] No git remote URL found
+2025-12-06T14:09:04.318Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-12-06T14:09:04.329Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/martin/Library/Application Support/Zed/external_agents/claude-code-acp/0.12.0/node_modules/@anthropic-ai/claude-agent-sdk/vendor/ripgrep/x64-darwin/rg)
+2025-12-06T14:09:04.348Z [DEBUG] Total plugin agents loaded: 0
+2025-12-06T14:09:04.399Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-06T14:09:04.399Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:09:04.399Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-06T14:09:04.402Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-06T14:09:04.402Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:09:04.402Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-06T14:09:04.405Z [DEBUG] Skills and commands included in Skill tool:
+2025-12-06T14:09:04.405Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-12-06T14:09:04.449Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.10671.1765030144449
+2025-12-06T14:09:04.449Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:09:04.452Z [DEBUG] Temp file written successfully, size: 49799 bytes
+2025-12-06T14:09:04.452Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:09:04.452Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.10671.1765030144449 to /Users/martin/.claude.json
+2025-12-06T14:09:04.453Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:09:04.456Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.10671.1765030144456
+2025-12-06T14:09:04.456Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:09:04.460Z [DEBUG] Temp file written successfully, size: 49799 bytes
+2025-12-06T14:09:04.460Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:09:04.460Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.10671.1765030144456 to /Users/martin/.claude.json
+2025-12-06T14:09:04.461Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:09:04.462Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.10671.1765030144462
+2025-12-06T14:09:04.463Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:09:04.465Z [DEBUG] Temp file written successfully, size: 49799 bytes
+2025-12-06T14:09:04.465Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:09:04.465Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.10671.1765030144462 to /Users/martin/.claude.json
+2025-12-06T14:09:04.466Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:09:04.467Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.10671.1765030144467
+2025-12-06T14:09:04.467Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:09:04.470Z [DEBUG] Temp file written successfully, size: 49799 bytes
+2025-12-06T14:09:04.470Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:09:04.470Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.10671.1765030144467 to /Users/martin/.claude.json
+2025-12-06T14:09:04.470Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:09:04.473Z [DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.10671.1765030144473
+2025-12-06T14:09:04.473Z [DEBUG] Preserving file permissions: 100600
+2025-12-06T14:09:04.476Z [DEBUG] Temp file written successfully, size: 49799 bytes
+2025-12-06T14:09:04.476Z [DEBUG] Applied original permissions to temp file
+2025-12-06T14:09:04.476Z [DEBUG] Renaming /Users/martin/.claude.json.tmp.10671.1765030144473 to /Users/martin/.claude.json
+2025-12-06T14:09:04.476Z [DEBUG] File /Users/martin/.claude.json written atomically
+2025-12-06T14:09:04.749Z [DEBUG] Shell snapshot created successfully (50831 bytes)
+2025-12-06T14:09:04.966Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-06T14:09:04.966Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:09:04.966Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-06T14:09:04.984Z [DEBUG] Total plugin output styles loaded: 0
+2025-12-06T14:09:05.737Z [DEBUG] Stream started - received first chunk
+2025-12-06T14:09:07.090Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-06T14:09:07.090Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:09:07.090Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-06T14:09:08.827Z [DEBUG] Stream started - received first chunk
+2025-12-06T14:09:12.667Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-06T14:09:12.667Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T14:09:12.667Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-06T23:40:49.362Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2025-12-06T23:40:49.364Z [DEBUG] Found 0 hook matchers in settings
+2025-12-06T23:40:49.364Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)

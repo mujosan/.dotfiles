@@ -1,0 +1,210 @@
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] Watching for changes in setting files /Users/martin/.claude/settings.json...
+[DEBUG] [LSP MANAGER] initializeLspServerManager() called
+[DEBUG] [LSP MANAGER] Created manager instance, state=pending
+[DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+[DEBUG] [LSP SERVER MANAGER] initialize() called
+[DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/martin/.claude/skills, project=/Volumes/Data/Computing/Development/Rust/mp4renamer/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853508434
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41447 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853508434 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853508443
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41447 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853508443 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[ERROR] AxiosError: Error
+    at KP (/$bunfs/root/claude:54:1142)
+    at <anonymous> (/$bunfs/root/claude:59:10074)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:861:50)
+    at processTicksAndRejections (native:7:39)
+    at spawnSync (unknown)
+    at spawnSync (node:child_process:226:22)
+    at execSync (node:child_process:275:109)
+    at H (/$bunfs/root/claude:1478:514)
+    at Rx$ (/$bunfs/root/claude:1478:692)
+    at request (/$bunfs/root/claude:61:2146)
+    at processTicksAndRejections (native:7:39)
+    at spawnSync (unknown)
+    at spawnSync (node:child_process:226:22)
+    at execSync (node:child_process:275:109)
+    at H (/$bunfs/root/claude:1478:514)
+    at Rx$ (/$bunfs/root/claude:1478:692)
+    at ux$ (/$bunfs/root/claude:1478:1221)
+    at ux$ (/$bunfs/root/claude:1478:1344)
+    at L (/$bunfs/root/claude:11:15230)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/martin/.zshrc
+[DEBUG] Snapshots directory: /Users/martin/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/martin/.claude/shell-snapshots/snapshot-zsh-1763853508553-z1uv3g.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/martin/.claude/todos/c821cd5e-00ef-4825-bc50-5a0b11978beb-agent-c821cd5e-00ef-4825-bc50-5a0b11978beb.json.tmp.5935.1763853508557
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/martin/.claude/todos/c821cd5e-00ef-4825-bc50-5a0b11978beb-agent-c821cd5e-00ef-4825-bc50-5a0b11978beb.json.tmp.5935.1763853508557 to /Users/martin/.claude/todos/c821cd5e-00ef-4825-bc50-5a0b11978beb-agent-c821cd5e-00ef-4825-bc50-5a0b11978beb.json
+[DEBUG] File /Users/martin/.claude/todos/c821cd5e-00ef-4825-bc50-5a0b11978beb-agent-c821cd5e-00ef-4825-bc50-5a0b11978beb.json written atomically
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853508666
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44559 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853508666 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853509689
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44559 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853509689 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[ERROR] Error streaming, falling back to non-streaming mode: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnLtTQ2T4V6C58YnWzj"}
+[ERROR] Error in non-streaming fallback: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnLuEHFXd2YZWYzQHPo"}
+[ERROR] Error: Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnLuEHFXd2YZWYzQHPo"}
+    at generate (/$bunfs/root/claude:382:26195)
+    at makeRequest (/$bunfs/root/claude:661:5356)
+    at processTicksAndRejections (native:7:39)
+[DEBUG] Shell snapshot created successfully (51039 bytes)
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514201
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44986 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514201 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514288
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44986 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514288 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514344
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45091 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514344 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514361
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45091 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514361 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514424
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44986 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514424 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514427
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44986 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514427 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514429
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44986 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514429 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853514667
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44986 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853514667 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically
+[ERROR] Error streaming, falling back to non-streaming mode: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnMEPiAGtRBAmQkNX1A"}
+[ERROR] Error streaming, falling back to non-streaming mode: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnMEfaRUZtVTn5aACVJ"}
+[ERROR] Error in non-streaming fallback: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnMFC5Nm5xVPTjLZvEC"}
+[ERROR] Error: Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnMFC5Nm5xVPTjLZvEC"}
+    at generate (/$bunfs/root/claude:382:26195)
+    at makeRequest (/$bunfs/root/claude:661:5356)
+    at processTicksAndRejections (native:7:39)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] Error in non-streaming fallback: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnMFRidpbV9xiujpS2P"}
+[ERROR] Error: Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"`clear_thinking_20251015` strategy requires `thinking` to be enabled"},"request_id":"req_011CVPnMFRidpbV9xiujpS2P"}
+    at generate (/$bunfs/root/claude:382:26195)
+    at makeRequest (/$bunfs/root/claude:661:5356)
+    at processTicksAndRejections (native:7:39)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] PackageManagerAutoUpdater: Update available 2.0.36 -> 2.0.50
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+[DEBUG] FileHistory: Added snapshot for 3e7279a6-054c-47b3-bd54-b97869322b8a, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/mcp</command-name>
+            <command-message>mcp</command-message>
+            <co...
+[DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] PackageManagerAutoUpdater: Update available 2.0.36 -> 2.0.50
+[DEBUG] PackageManagerAutoUpdater: Update available 2.0.36 -> 2.0.50
+[ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:41:20146)
+    at <anonymous> (/$bunfs/root/claude:59:10240)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:58:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:249:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:61:2146)
+    at processTicksAndRejections (native:7:39)
+[DEBUG] Detected Homebrew cask installation: /usr/local/Caskroom/claude-code/2.0.36/claude
+[DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+[DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/martin/.claude/shell-snapshots/snapshot-zsh-1763853508553-z1uv3g.sh
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Making snapshot for message f2a287b6-aba3-40f6-b401-ea9b28dbc566
+[DEBUG] FileHistory: Added snapshot for f2a287b6-aba3-40f6-b401-ea9b28dbc566, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/martin/.claude.json.tmp.5935.1763853529089
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45406 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/martin/.claude.json.tmp.5935.1763853529089 to /Users/martin/.claude.json
+[DEBUG] File /Users/martin/.claude.json written atomically

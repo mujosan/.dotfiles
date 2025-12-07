@@ -1,0 +1,99 @@
+use clap::Parser;
+use std::fs;
+use std::io;
+use std::path::{Path, PathBuf};
+use chrono::{DateTime, Local};
+use std::ffi::OsStr;
+
+/// Rename and copy .MP4 files from a source directory to a destination directory
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+struct Args {
+    /// Path to the source directory
+    #[arg(short, long)]
+    source: String,
+
+    /// Path to the destination directory
+    #[arg(short, long)]
+    destination: String,
+}
+
+fn main() -> io::Result<()> {
+    let args = Args::parse();
+
+    let source_dir = Path::new(&args.source);
+    let destination_dir = Path::new(&args.destination);
+
+    if !source_dir.is_dir() {
+        eprintln!("Error: source path is not a directory or doesn't exist.");
+        std::process::exit(1);
+    }
+
+    if !destination_dir.is_dir() {
+        eprintln!("Error: destination path is not a directory or doesn't exist.");
+        std::process::exit(1);
+    }
+
+    for entry in fs::read_dir(source_dir)? {
+        let entry = entry?;
+        let path = entry.path();
+
+        if path.is_file() && is_mp4(&path) && !is_appledot_file(&path){
+            match get_creation_time(&path) {
+                Ok(datetime) => {
+                    let base_name = datetime.format("%Y%m%d-%H%M%S").to_string();
+                    let new_path = generate_unique_filename(destination_dir, &base_name);
+
+                    println!(
+                        "Copying {:?} -> {:?}",
+                        path.file_name().unwrap(),
+                        new_path.file_name().unwrap()
+                    );
+
+                    fs::copy(&path, &new_path)?;
+                }
+                Err(e) => eprintln!("Failed to get creation time for {:?}: {}", path, e),
+            }
+        }
+    }
+
+    Ok(())
+}
+
+fn is_mp4(path: &Path) -> bool {
+    path.extension()
+        .and_then(OsStr::to_str)
+        .map(|ext| ext.eq_ignore_ascii_case("mp4"))
+        .unwrap_or(false)
+}
+ 
+fn is_appledot_file(path: &Path) -> bool {
+    path.file_name()
+        .and_then(OsStr::to_str)
+        .map(|name| name.starts_with("._"))
+        .unwrap_or(false)
+}
+
+fn get_creation_time(path: &Path) -> io::Result<DateTime<Local>> {
+    let metadata = fs::metadata(path)?;
+    let system_time = metadata
+        .created()
+        .or_else(|_| metadata.modified())?;
+    Ok(DateTime::<Local>::from(system_time))
+}
+
+fn generate_unique_filename(dir: &Path, base: &str) -> PathBuf {
+    let mut counter = 0;
+    loop {
+        let filename = if counter == 0 {
+            format!("{}.MP4", base)
+        } else {
+            format!("{}({}).MP4", base, counter)
+        };
+        let full_path = dir.join(filename);
+        if !full_path.exists() {
+            return full_path;
+        }
+        counter += 1;
+    }
+}
